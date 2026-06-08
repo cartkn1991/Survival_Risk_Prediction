@@ -29,7 +29,9 @@ DIRS = [
 
 FILES = [
     "aesurv_domain.py",
+    "dann_aesurv_bridge.py",
     "mini_vae_dann_pipeline.py",
+    "train_aesurv_dann_latent.py",
     "train_aesurv_joint_dann_contrastive.py",
     "train_aesurv_dann_latent_aux_contrastive.py",
     "train_aesurv_dann_latent_aux.py",
