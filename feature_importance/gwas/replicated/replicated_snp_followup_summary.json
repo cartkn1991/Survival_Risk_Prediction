@@ -1,0 +1,66 @@
+{
+  "snps": [
+    "12:46600556_T",
+    "11:127103604_C"
+  ],
+  "group_definition": {
+    "intercept": -3.5081755116171087,
+    "age": 0.0544550440920971,
+    "cohort": 0.02721701370381408,
+    "mode": "residual",
+    "residual_q_lo": 0.1,
+    "residual_q_hi": 0.9,
+    "resid_lo": -0.6104380488395691,
+    "resid_hi": 0.5924243927001953
+  },
+  "annotation": [
+    {
+      "snp": "12:46600556_T",
+      "gene_ensembl": "SLC38A4-AS1",
+      "gwas_rsids_near": "rs4768737",
+      "gwas_n_hits_near": 1,
+      "in_aesurv_gradient_11k": false,
+      "fhs_hr": 1.6220865449952675,
+      "fhs_p": 0.0001282707135282,
+      "whi_hr": 1.2705336906026157,
+      "whi_p": 0.0322311403296071,
+      "meta_hr": 1.414473157677475,
+      "meta_p": 3.443129196381807e-05,
+      "replicated": true
+    },
+    {
+      "snp": "11:127103604_C",
+      "gene_ensembl": "",
+      "gwas_rsids_near": "rs11220776",
+      "gwas_n_hits_near": 1,
+      "in_aesurv_gradient_11k": false,
+      "fhs_hr": 1.1515915168302338,
+      "fhs_p": 0.0338738972075908,
+      "whi_hr": 1.7629089874360642,
+      "whi_p": 0.0457061428542305,
+      "meta_hr": 1.177428830594829,
+      "meta_p": 0.0116802419260894,
+      "replicated": true
+    }
+  ],
+  "stratification": [
+    {
+      "snp": "12:46600556_T",
+      "mean_dose_resilient": 0.06521739065647125,
+      "mean_dose_middle": 0.0762711837887764,
+      "mean_dose_accelerated": 0.05234159901738167,
+      "trend_r": -0.011534625861769322,
+      "trend_p": 0.5136395585797013,
+      "expected_direction_in_tails": false
+    },
+    {
+      "snp": "11:127103604_C",
+      "mean_dose_resilient": 0.39945653080940247,
+      "mean_dose_middle": 0.5149313807487488,
+      "mean_dose_accelerated": 0.5426997542381287,
+      "trend_r": 0.05783815145890468,
+      "trend_p": 0.0010458788696454462,
+      "expected_direction_in_tails": true
+    }
+  ]
+}

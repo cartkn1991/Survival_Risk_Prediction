@@ -1,0 +1,66 @@
+{
+  "_comment": "Copy to lifestyle_variable_map.json and replace column names with your dbGaP export headers.",
+  "fhs": {
+    "raw_csv": "external_phenotypes/fhs_lifestyle_raw.csv",
+    "cohort": "FHS",
+    "id_column": "Share_ID",
+    "alternate_id_columns": ["IID", "shareid", "subject_id"],
+    "columns": {
+      "subject_id": "Share_ID",
+      "smoking_status": "SMOKE_STATUS",
+      "cigarettes_per_day": "CIGPD",
+      "pack_years": "PACKYRS",
+      "alcohol_drinks_per_week": "DRINKSWK",
+      "sleep_hours": "SLEEPHR",
+      "sleep_quality": "SLEEPQL",
+      "physical_activity": "ACTIVITY",
+      "bmi": "BMI",
+      "exam_year": "EXAMYR"
+    },
+    "smoking_value_map": {
+      "0": "never",
+      "1": "former",
+      "2": "current",
+      "never": "never",
+      "former": "former",
+      "current": "current",
+      "Never": "never",
+      "Former": "former",
+      "Current": "current"
+    }
+  },
+  "whi": {
+    "raw_csv": "external_phenotypes/whi_lifestyle_raw.csv",
+    "cohort": "WHI",
+    "id_column": "dbGaP_Subject_ID",
+    "alternate_id_columns": ["SUBJID", "subjid", "sample_ID"],
+    "columns": {
+      "subject_id": "dbGaP_Subject_ID",
+      "smoking_status": "SMOKING",
+      "cigarettes_per_day": "CIGDAY",
+      "pack_years": "PACKYRS",
+      "alcohol_drinks_per_week": "ALCDRWK",
+      "sleep_hours": "SLEEPHRS",
+      "sleep_quality": "SLEEPQUAL",
+      "physical_activity": "METWEEK",
+      "bmi": "BMI",
+      "exam_year": "VISITYR"
+    },
+    "smoking_value_map": {
+      "0": "never",
+      "1": "former",
+      "2": "current",
+      "1. never smoker": "never",
+      "2. former smoker": "former",
+      "3. current smoker": "current"
+    },
+    "whi_id_map_csv": "whi_meth_ids.csv",
+    "whi_id_map_from": "dbGaP_Subject_ID",
+    "whi_id_map_to": "SAMPLE_ID"
+  },
+  "harmonization": {
+    "winsor_quantiles": [0.01, 0.99],
+    "short_sleep_hours": 6.0,
+    "alcohol_drinks_per_week_cap": 60.0
+  }
+}

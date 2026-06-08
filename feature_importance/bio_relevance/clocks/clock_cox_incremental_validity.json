@@ -1,0 +1,1666 @@
+{
+  "split": {
+    "val_frac": 0.15,
+    "seed": 42,
+    "fhs_splits": [
+      "FHS_train",
+      "FHS_val",
+      "WHI"
+    ]
+  },
+  "raw_predictors": {
+    "FHS_train": {
+      "split_label": "FHS_train",
+      "n": 2727,
+      "n_events": 489,
+      "baseline_model": "age_z + sex",
+      "baseline": {
+        "n": 2727,
+        "n_events": 489,
+        "formula": "age_z + sex",
+        "c_index": 0.811806244501432,
+        "log_likelihood": -3422.985625189113,
+        "concordance_lifelines": 0.811832987886756,
+        "coefficients": {
+          "age_z": {
+            "coef": 1.383035517762009,
+            "hr_per_sd": 3.98698584363458,
+            "se": 0.06108115930582583,
+            "p_value": 1.65063065040937e-113
+          },
+          "sex": {
+            "coef": -0.34805681894885937,
+            "hr_per_sd": 0.7060587575582078,
+            "se": 0.088310043972976,
+            "p_value": 8.103949783041684e-05
+          }
+        }
+      },
+      "predictors": {
+        "log_h": {
+          "label": "AESurv log_h",
+          "formula_joint": "age_z + log_h_z + sex",
+          "model_age_plus_predictor": {
+            "n": 2727,
+            "n_events": 489,
+            "formula": "age_z + log_h_z + sex",
+            "c_index": 0.8291662766973027,
+            "log_likelihood": -3369.9877038699897,
+            "concordance_lifelines": 0.829188754193316,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.8353061620283659,
+                "hr_per_sd": 2.305519802863156,
+                "se": 0.08138189018881309,
+                "p_value": 1.0234432448833879e-24
+              },
+              "log_h_z": {
+                "coef": 0.9278733938889988,
+                "hr_per_sd": 2.529125001951921,
+                "se": 0.09426498149686756,
+                "p_value": 7.330676720846478e-23
+              },
+              "sex": {
+                "coef": -0.27278790357931004,
+                "hr_per_sd": 0.761254229805052,
+                "se": 0.08866416935392135,
+                "p_value": 0.002093465930723625
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.9278733938889988,
+            "hr_per_sd": 2.529125001951921,
+            "se": 0.09426498149686756,
+            "p_value": 7.330676720846478e-23
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 105.99584263824636,
+            "p_value": 7.389005766870082e-25,
+            "df": 1
+          }
+        },
+        "Horvath": {
+          "label": "Horvath",
+          "formula_joint": "age_z + Horvath_z + sex",
+          "model_age_plus_predictor": {
+            "n": 2727,
+            "n_events": 489,
+            "formula": "age_z + Horvath_z + sex",
+            "c_index": 0.8119826666417086,
+            "log_likelihood": -3415.9420289314744,
+            "concordance_lifelines": 0.8120112476781779,
+            "coefficients": {
+              "age_z": {
+                "coef": 1.1328556363218123,
+                "hr_per_sd": 3.104509203300793,
+                "se": 0.09005334285005133,
+                "p_value": 2.726200257585893e-36
+              },
+              "Horvath_z": {
+                "coef": 0.32978249750152766,
+                "hr_per_sd": 1.3906656223196576,
+                "se": 0.08584246139841589,
+                "p_value": 0.00012217634040511232
+              },
+              "sex": {
+                "coef": -0.31863731567156534,
+                "hr_per_sd": 0.7271392234891506,
+                "se": 0.08867195367310834,
+                "p_value": 0.00032634123949400217
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.32978249750152766,
+            "hr_per_sd": 1.3906656223196576,
+            "se": 0.08584246139841589,
+            "p_value": 0.00012217634040511232
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 14.08719251527691,
+            "p_value": 0.00017452812739473045,
+            "df": 1
+          }
+        },
+        "Hannum": {
+          "label": "Hannum",
+          "formula_joint": "age_z + Hannum_z + sex",
+          "model_age_plus_predictor": {
+            "n": 2727,
+            "n_events": 489,
+            "formula": "age_z + Hannum_z + sex",
+            "c_index": 0.8161915279935609,
+            "log_likelihood": -3401.959379328302,
+            "concordance_lifelines": 0.8162193016520612,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.9350433514967287,
+                "hr_per_sd": 2.547323885648478,
+                "se": 0.09290350975440957,
+                "p_value": 7.915073781352629e-24
+              },
+              "Hannum_z": {
+                "coef": 0.5840283165452891,
+                "hr_per_sd": 1.7932476697105864,
+                "se": 0.08853342260904655,
+                "p_value": 4.2041384460019665e-11
+              },
+              "sex": {
+                "coef": -0.25712428237171775,
+                "hr_per_sd": 0.7732721037021483,
+                "se": 0.08948533146257003,
+                "p_value": 0.00406120829798676
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.5840283165452891,
+            "hr_per_sd": 1.7932476697105864,
+            "se": 0.08853342260904655,
+            "p_value": 4.2041384460019665e-11
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 42.052491721621664,
+            "p_value": 8.885589659106668e-11,
+            "df": 1
+          }
+        },
+        "PhenoAge": {
+          "label": "PhenoAge",
+          "formula_joint": "age_z + PhenoAge_z + sex",
+          "model_age_plus_predictor": {
+            "n": 2727,
+            "n_events": 489,
+            "formula": "age_z + PhenoAge_z + sex",
+            "c_index": 0.8219755536005091,
+            "log_likelihood": -3389.1767847448405,
+            "concordance_lifelines": 0.8220003462263665,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.8752249970578785,
+                "hr_per_sd": 2.399415094574955,
+                "se": 0.08763845681915136,
+                "p_value": 1.7416682391935206e-23
+              },
+              "PhenoAge_z": {
+                "coef": 0.6816200336912889,
+                "hr_per_sd": 1.9770780722885613,
+                "se": 0.08182312501988481,
+                "p_value": 8.056406735817762e-17
+              },
+              "sex": {
+                "coef": -0.250915962861787,
+                "hr_per_sd": 0.7780877570798963,
+                "se": 0.08915624927825666,
+                "p_value": 0.004887756318680247
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.6816200336912889,
+            "hr_per_sd": 1.9770780722885613,
+            "se": 0.08182312501988481,
+            "p_value": 8.056406735817762e-17
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 67.61768088854478,
+            "p_value": 1.9847967773406322e-16,
+            "df": 1
+          }
+        },
+        "GrimAge": {
+          "label": "GrimAge V2",
+          "formula_joint": "age_z + GrimAge_z + sex",
+          "model_age_plus_predictor": {
+            "n": 2727,
+            "n_events": 489,
+            "formula": "age_z + GrimAge_z + sex",
+            "c_index": 0.8427746476236827,
+            "log_likelihood": -3331.2437542224047,
+            "concordance_lifelines": 0.8427917074106479,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.4490659657162325,
+                "hr_per_sd": 1.5668480120418176,
+                "se": 0.09076425522808415,
+                "p_value": 7.513097551824856e-07
+              },
+              "GrimAge_z": {
+                "coef": 1.2386462409075287,
+                "hr_per_sd": 3.450938561674928,
+                "se": 0.08791164599026209,
+                "p_value": 4.3959974214881046e-45
+              },
+              "sex": {
+                "coef": -0.1825125644544548,
+                "hr_per_sd": 0.8331741754835846,
+                "se": 0.08907104346798247,
+                "p_value": 0.04045553240500214
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 1.2386462409075287,
+            "hr_per_sd": 3.450938561674928,
+            "se": 0.08791164599026209,
+            "p_value": 4.3959974214881046e-45
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 183.48374193341624,
+            "p_value": 8.410414978379873e-42,
+            "df": 1
+          }
+        },
+        "DunedinPACE": {
+          "label": "DunedinPACE",
+          "formula_joint": "age_z + DunedinPACE_z + sex",
+          "model_age_plus_predictor": {
+            "n": 2727,
+            "n_events": 489,
+            "formula": "age_z + DunedinPACE_z + sex",
+            "c_index": 0.8273664900885387,
+            "log_likelihood": -3375.0891751235094,
+            "concordance_lifelines": 0.8273836983526175,
+            "coefficients": {
+              "age_z": {
+                "coef": 1.317534699858488,
+                "hr_per_sd": 3.734204086372359,
+                "se": 0.06155380553986881,
+                "p_value": 1.2105031194196073e-101
+              },
+              "DunedinPACE_z": {
+                "coef": 0.4163933445946007,
+                "hr_per_sd": 1.5164822516674061,
+                "se": 0.040170108665047985,
+                "p_value": 3.5495902973977545e-25
+              },
+              "sex": {
+                "coef": -0.2963858024161054,
+                "hr_per_sd": 0.7435005283802263,
+                "se": 0.08858051861324377,
+                "p_value": 0.0008200179467442092
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.4163933445946007,
+            "hr_per_sd": 1.5164822516674061,
+            "se": 0.040170108665047985,
+            "p_value": 3.5495902973977545e-25
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 95.7929001312068,
+            "p_value": 1.2755232968809016e-22,
+            "df": 1
+          }
+        },
+        "EpiClock": {
+          "label": "EpiClock",
+          "formula_joint": "age_z + EpiClock_z + sex",
+          "model_age_plus_predictor": {
+            "n": 2727,
+            "n_events": 489,
+            "formula": "age_z + EpiClock_z + sex",
+            "c_index": 0.8164807292739082,
+            "log_likelihood": -3400.552875188532,
+            "concordance_lifelines": 0.8165075117085335,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.891062463710697,
+                "hr_per_sd": 2.4377182630847503,
+                "se": 0.09449517343225468,
+                "p_value": 4.11208493251498e-21
+              },
+              "EpiClock_z": {
+                "coef": 0.6128186131191798,
+                "hr_per_sd": 1.845626180467904,
+                "se": 0.08733211089255004,
+                "p_value": 2.2651199766767807e-12
+              },
+              "sex": {
+                "coef": -0.2812434296574786,
+                "hr_per_sd": 0.7548445615600341,
+                "se": 0.08885439213258012,
+                "p_value": 0.0015496734686349808
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.6128186131191798,
+            "hr_per_sd": 1.845626180467904,
+            "se": 0.08733211089255004,
+            "p_value": 2.2651199766767807e-12
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 44.86550000116131,
+            "p_value": 2.1104366065746432e-11,
+            "df": 1
+          }
+        }
+      },
+      "note": "Incremental validity: predictor HR and p are from the joint model (age + predictor + sex). LRT compares that model to age-only (M0)."
+    },
+    "FHS_val": {
+      "split_label": "FHS_val",
+      "n": 482,
+      "n_events": 86,
+      "baseline_model": "age_z + sex",
+      "baseline": {
+        "n": 482,
+        "n_events": 86,
+        "formula": "age_z + sex",
+        "c_index": 0.8301263059410572,
+        "log_likelihood": -435.9349145445538,
+        "concordance_lifelines": 0.8301527907701902,
+        "coefficients": {
+          "age_z": {
+            "coef": 1.4739544743334578,
+            "hr_per_sd": 4.36646813104928,
+            "se": 0.1490693371757559,
+            "p_value": 4.706680648829353e-23
+          },
+          "sex": {
+            "coef": -0.8269029413345108,
+            "hr_per_sd": 0.4374018499456411,
+            "se": 0.21542226156643726,
+            "p_value": 0.0001237774744720163
+          }
+        }
+      },
+      "predictors": {
+        "log_h": {
+          "label": "AESurv log_h",
+          "formula_joint": "age_z + log_h_z + sex",
+          "model_age_plus_predictor": {
+            "n": 482,
+            "n_events": 86,
+            "formula": "age_z + log_h_z + sex",
+            "c_index": 0.8407297676594417,
+            "log_likelihood": -431.5407383314928,
+            "concordance_lifelines": 0.8407545993140007,
+            "coefficients": {
+              "age_z": {
+                "coef": 1.228917173158078,
+                "hr_per_sd": 3.4175269421113614,
+                "se": 0.17102256343182984,
+                "p_value": 6.686274670432784e-13
+              },
+              "log_h_z": {
+                "coef": 0.5346418861395463,
+                "hr_per_sd": 1.706836890845893,
+                "se": 0.18718882074667972,
+                "p_value": 0.00428794197747445
+              },
+              "sex": {
+                "coef": -0.7501797486828294,
+                "hr_per_sd": 0.4722816531058742,
+                "se": 0.21694338262898322,
+                "p_value": 0.0005442988646050339
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.5346418861395463,
+            "hr_per_sd": 1.706836890845893,
+            "se": 0.18718882074667972,
+            "p_value": 0.00428794197747445
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 8.78835242612206,
+            "p_value": 0.0030315992445937505,
+            "df": 1
+          }
+        },
+        "Horvath": {
+          "label": "Horvath",
+          "formula_joint": "age_z + Horvath_z + sex",
+          "model_age_plus_predictor": {
+            "n": 482,
+            "n_events": 86,
+            "formula": "age_z + Horvath_z + sex",
+            "c_index": 0.8402307812256354,
+            "log_likelihood": -430.59043390446664,
+            "concordance_lifelines": 0.8402556906766449,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.9180065768671843,
+                "hr_per_sd": 2.504293294743385,
+                "se": 0.22685338511699066,
+                "p_value": 5.1945738518121547e-05
+              },
+              "Horvath_z": {
+                "coef": 0.7347103751744668,
+                "hr_per_sd": 2.084878072606115,
+                "se": 0.21896534493834177,
+                "p_value": 0.000792580798291717
+              },
+              "sex": {
+                "coef": -0.7998742746888521,
+                "hr_per_sd": 0.4493854596924305,
+                "se": 0.21584033383863632,
+                "p_value": 0.00021067382477290688
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.7347103751744668,
+            "hr_per_sd": 2.084878072606115,
+            "se": 0.21896534493834177,
+            "p_value": 0.000792580798291717
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 10.68896128017434,
+            "p_value": 0.0010777670377701241,
+            "df": 1
+          }
+        },
+        "Hannum": {
+          "label": "Hannum",
+          "formula_joint": "age_z + Hannum_z + sex",
+          "model_age_plus_predictor": {
+            "n": 482,
+            "n_events": 86,
+            "formula": "age_z + Hannum_z + sex",
+            "c_index": 0.838546702011539,
+            "log_likelihood": -429.4621866096239,
+            "concordance_lifelines": 0.8385718740255691,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.8283319866653941,
+                "hr_per_sd": 2.2894966425660592,
+                "se": 0.23469988286783924,
+                "p_value": 0.00041662233589666564
+              },
+              "Hannum_z": {
+                "coef": 0.8024649070832174,
+                "hr_per_sd": 2.2310334465835346,
+                "se": 0.21962508840728587,
+                "p_value": 0.00025839325396677555
+              },
+              "sex": {
+                "coef": -0.663381415842987,
+                "hr_per_sd": 0.5151065967052166,
+                "se": 0.22082580409304145,
+                "p_value": 0.00266373239482061
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.8024649070832174,
+            "hr_per_sd": 2.2310334465835346,
+            "se": 0.21962508840728587,
+            "p_value": 0.00025839325396677555
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 12.945455869859757,
+            "p_value": 0.00032069899405141487,
+            "df": 1
+          }
+        },
+        "PhenoAge": {
+          "label": "PhenoAge",
+          "formula_joint": "age_z + PhenoAge_z + sex",
+          "model_age_plus_predictor": {
+            "n": 482,
+            "n_events": 86,
+            "formula": "age_z + PhenoAge_z + sex",
+            "c_index": 0.8359893965382816,
+            "log_likelihood": -431.28613003180584,
+            "concordance_lifelines": 0.8360149672591207,
+            "coefficients": {
+              "age_z": {
+                "coef": 1.0019349399926119,
+                "hr_per_sd": 2.723546632577526,
+                "se": 0.215968869474924,
+                "p_value": 3.4966517784357143e-06
+              },
+              "PhenoAge_z": {
+                "coef": 0.6185818260259067,
+                "hr_per_sd": 1.8562936269485377,
+                "se": 0.1995227278929522,
+                "p_value": 0.0019331977561530547
+              },
+              "sex": {
+                "coef": -0.7239305010238594,
+                "hr_per_sd": 0.48484283067677,
+                "se": 0.21902340147261212,
+                "p_value": 0.0009488645595047481
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.6185818260259067,
+            "hr_per_sd": 1.8562936269485377,
+            "se": 0.1995227278929522,
+            "p_value": 0.0019331977561530547
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 9.297569025495932,
+            "p_value": 0.002294581370618971,
+            "df": 1
+          }
+        },
+        "GrimAge": {
+          "label": "GrimAge V2",
+          "formula_joint": "age_z + GrimAge_z + sex",
+          "model_age_plus_predictor": {
+            "n": 482,
+            "n_events": 86,
+            "formula": "age_z + GrimAge_z + sex",
+            "c_index": 0.8468111648214565,
+            "log_likelihood": -426.15423166438467,
+            "concordance_lifelines": 0.8468350483317743,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.7382757907341888,
+                "hr_per_sd": 2.0923247967707326,
+                "se": 0.22005147580936937,
+                "p_value": 0.0007936095675040478
+              },
+              "GrimAge_z": {
+                "coef": 0.9744344713806138,
+                "hr_per_sd": 2.649668323921731,
+                "se": 0.21545214131699572,
+                "p_value": 6.104360003711556e-06
+              },
+              "sex": {
+                "coef": -0.6162398678428883,
+                "hr_per_sd": 0.5399709874331081,
+                "se": 0.22278641561787307,
+                "p_value": 0.0056738660628626765
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.9744344713806138,
+            "hr_per_sd": 2.649668323921731,
+            "se": 0.21545214131699572,
+            "p_value": 6.104360003711556e-06
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 19.561365760338276,
+            "p_value": 9.7419423589887e-06,
+            "df": 1
+          }
+        },
+        "DunedinPACE": {
+          "label": "DunedinPACE",
+          "formula_joint": "age_z + DunedinPACE_z + sex",
+          "model_age_plus_predictor": {
+            "n": 482,
+            "n_events": 86,
+            "formula": "age_z + DunedinPACE_z + sex",
+            "c_index": 0.841259940745361,
+            "log_likelihood": -431.6450054702412,
+            "concordance_lifelines": 0.8412846897411912,
+            "coefficients": {
+              "age_z": {
+                "coef": 1.4214496228069342,
+                "hr_per_sd": 4.143122053383267,
+                "se": 0.14923377903274754,
+                "p_value": 1.6506452295400917e-21
+              },
+              "DunedinPACE_z": {
+                "coef": 0.2732397642795337,
+                "hr_per_sd": 1.3142153089393698,
+                "se": 0.0870490948862919,
+                "p_value": 0.001695742656349854
+              },
+              "sex": {
+                "coef": -0.8065434844945186,
+                "hr_per_sd": 0.44639838556183825,
+                "se": 0.21583032801890703,
+                "p_value": 0.00018627850195407526
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.2732397642795337,
+            "hr_per_sd": 1.3142153089393698,
+            "se": 0.0870490948862919,
+            "p_value": 0.001695742656349854
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 8.579818148625236,
+            "p_value": 0.0033990931629394984,
+            "df": 1
+          }
+        },
+        "EpiClock": {
+          "label": "EpiClock",
+          "formula_joint": "age_z + EpiClock_z + sex",
+          "model_age_plus_predictor": {
+            "n": 482,
+            "n_events": 86,
+            "formula": "age_z + EpiClock_z + sex",
+            "c_index": 0.8392328083580227,
+            "log_likelihood": -428.478143031,
+            "concordance_lifelines": 0.8392578734019333,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.7329742346507849,
+                "hr_per_sd": 2.081261571582718,
+                "se": 0.2449965736222527,
+                "p_value": 0.0027736204675465645
+              },
+              "EpiClock_z": {
+                "coef": 0.8971842353881352,
+                "hr_per_sd": 2.452687189130995,
+                "se": 0.2265398933307311,
+                "p_value": 7.483035077574866e-05
+              },
+              "sex": {
+                "coef": -0.7500498397558015,
+                "hr_per_sd": 0.4723430106940471,
+                "se": 0.21701554507807339,
+                "p_value": 0.0005478419883770951
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.8971842353881352,
+            "hr_per_sd": 2.452687189130995,
+            "se": 0.2265398933307311,
+            "p_value": 7.483035077574866e-05
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 14.913543027107607,
+            "p_value": 0.00011255207907190088,
+            "df": 1
+          }
+        }
+      },
+      "note": "Incremental validity: predictor HR and p are from the joint model (age + predictor + sex). LRT compares that model to age-only (M0)."
+    },
+    "WHI": {
+      "split_label": "WHI",
+      "n": 510,
+      "n_events": 202,
+      "baseline_model": "age_z",
+      "baseline": {
+        "n": 510,
+        "n_events": 202,
+        "formula": "age_z",
+        "c_index": 0.6936162104626867,
+        "log_likelihood": -1134.231247920477,
+        "concordance_lifelines": 0.6936111220614709,
+        "coefficients": {
+          "age_z": {
+            "coef": 0.773974903348967,
+            "hr_per_sd": 2.1683682005277376,
+            "se": 0.08270028365760937,
+            "p_value": 8.065212014479723e-21
+          }
+        }
+      },
+      "predictors": {
+        "log_h": {
+          "label": "AESurv log_h",
+          "formula_joint": "age_z + log_h_z",
+          "model_age_plus_predictor": {
+            "n": 510,
+            "n_events": 202,
+            "formula": "age_z + log_h_z",
+            "c_index": 0.6943586643714109,
+            "log_likelihood": -1133.748380563819,
+            "concordance_lifelines": 0.6943535564578652,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.7034262899037774,
+                "hr_per_sd": 2.020664241739356,
+                "se": 0.10950682718276557,
+                "p_value": 1.3310274473188056e-10
+              },
+              "log_h_z": {
+                "coef": 0.11089813814545721,
+                "hr_per_sd": 1.1172810927337464,
+                "se": 0.1132104990883094,
+                "p_value": 0.32729610961914846
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.11089813814545721,
+            "hr_per_sd": 1.1172810927337464,
+            "se": 0.1132104990883094,
+            "p_value": 0.32729610961914846
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 0.9657347133161238,
+            "p_value": 0.32574623770259725,
+            "df": 1
+          }
+        },
+        "Horvath": {
+          "label": "Horvath",
+          "formula_joint": "age_z + Horvath_z",
+          "model_age_plus_predictor": {
+            "n": 510,
+            "n_events": 202,
+            "formula": "age_z + Horvath_z",
+            "c_index": 0.6942141158228098,
+            "log_likelihood": -1134.2297535525993,
+            "concordance_lifelines": 0.6942090117081248,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.7771033320682218,
+                "hr_per_sd": 2.1751624079356984,
+                "se": 0.10054028691305948,
+                "p_value": 1.0816243536193133e-14
+              },
+              "Horvath_z": {
+                "coef": -0.005014344301990815,
+                "hr_per_sd": 0.994998206535562,
+                "se": 0.09160462352479674,
+                "p_value": 0.9563464087251472
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": -0.005014344301990815,
+            "hr_per_sd": 0.994998206535562,
+            "se": 0.09160462352479674,
+            "p_value": 0.9563464087251472
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 0.0029887357554798655,
+            "p_value": 0.9564019030996428,
+            "df": 1
+          }
+        },
+        "Hannum": {
+          "label": "Hannum",
+          "formula_joint": "age_z + Hannum_z",
+          "model_age_plus_predictor": {
+            "n": 510,
+            "n_events": 202,
+            "formula": "age_z + Hannum_z",
+            "c_index": 0.6932942614226205,
+            "log_likelihood": -1133.7074887144986,
+            "concordance_lifelines": 0.6932891814825035,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.6966564544428269,
+                "hr_per_sd": 2.0070308771871685,
+                "se": 0.11235181143613698,
+                "p_value": 5.622345817898796e-10
+              },
+              "Hannum_z": {
+                "coef": 0.10694630658949827,
+                "hr_per_sd": 1.1128744988477945,
+                "se": 0.1047222070253169,
+                "p_value": 0.3071416505273603
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.10694630658949827,
+            "hr_per_sd": 1.1128744988477945,
+            "se": 0.1047222070253169,
+            "p_value": 0.3071416505273603
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 1.047518411956844,
+            "p_value": 0.30607931189008136,
+            "df": 1
+          }
+        },
+        "PhenoAge": {
+          "label": "PhenoAge",
+          "formula_joint": "age_z + PhenoAge_z",
+          "model_age_plus_predictor": {
+            "n": 510,
+            "n_events": 202,
+            "formula": "age_z + PhenoAge_z",
+            "c_index": 0.6944506498114299,
+            "log_likelihood": -1133.8318968238934,
+            "concordance_lifelines": 0.6944455394804273,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.7214618216950195,
+                "hr_per_sd": 2.057438621834622,
+                "se": 0.10160297846703341,
+                "p_value": 1.2404213909213825e-12
+              },
+              "PhenoAge_z": {
+                "coef": 0.08502177773708137,
+                "hr_per_sd": 1.0887407767506079,
+                "se": 0.0950724077187942,
+                "p_value": 0.3711697070749065
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.08502177773708137,
+            "hr_per_sd": 1.0887407767506079,
+            "se": 0.0950724077187942,
+            "p_value": 0.3711697070749065
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 0.7987021931671734,
+            "p_value": 0.37148167588991865,
+            "df": 1
+          }
+        },
+        "GrimAge": {
+          "label": "GrimAge V2",
+          "formula_joint": "age_z + GrimAge_z",
+          "model_age_plus_predictor": {
+            "n": 510,
+            "n_events": 202,
+            "formula": "age_z + GrimAge_z",
+            "c_index": 0.7140435485354604,
+            "log_likelihood": -1121.708494623702,
+            "concordance_lifelines": 0.7140379232861592,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.4337745179002652,
+                "hr_per_sd": 1.543070894021773,
+                "se": 0.10468798450325602,
+                "p_value": 3.420471504262593e-05
+              },
+              "GrimAge_z": {
+                "coef": 0.5114866996402848,
+                "hr_per_sd": 1.667768824055181,
+                "se": 0.10067921808151702,
+                "p_value": 3.7671974120173457e-07
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.5114866996402848,
+            "hr_per_sd": 1.667768824055181,
+            "se": 0.10067921808151702,
+            "p_value": 3.7671974120173457e-07
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 25.045506593549817,
+            "p_value": 5.599308727882967e-07,
+            "df": 1
+          }
+        },
+        "DunedinPACE": {
+          "label": "DunedinPACE",
+          "formula_joint": "age_z + DunedinPACE_z",
+          "model_age_plus_predictor": {
+            "n": 510,
+            "n_events": 202,
+            "formula": "age_z + DunedinPACE_z",
+            "c_index": 0.6945820575828855,
+            "log_likelihood": -1133.232208635833,
+            "concordance_lifelines": 0.6945769437983732,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.7769706983453187,
+                "hr_per_sd": 2.1748739271791764,
+                "se": 0.08310774270696335,
+                "p_value": 8.851641116954393e-21
+              },
+              "DunedinPACE_z": {
+                "coef": 0.10278692565594141,
+                "hr_per_sd": 1.1082552431574664,
+                "se": 0.07225827360766192,
+                "p_value": 0.15488303261605013
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.10278692565594141,
+            "hr_per_sd": 1.1082552431574664,
+            "se": 0.07225827360766192,
+            "p_value": 0.15488303261605013
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 1.9980785692878271,
+            "p_value": 0.15749875088331589,
+            "df": 1
+          }
+        },
+        "EpiClock": {
+          "label": "EpiClock",
+          "formula_joint": "age_z + EpiClock_z",
+          "model_age_plus_predictor": {
+            "n": 510,
+            "n_events": 202,
+            "formula": "age_z + EpiClock_z",
+            "c_index": 0.6949499993429611,
+            "log_likelihood": -1133.393156019715,
+            "concordance_lifelines": 0.6949448758886217,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.6614965668781693,
+                "hr_per_sd": 1.9376900482963146,
+                "se": 0.1202595033708057,
+                "p_value": 3.78552020829134e-08
+              },
+              "EpiClock_z": {
+                "coef": 0.1431122329517769,
+                "hr_per_sd": 1.1538592954338023,
+                "se": 0.11058237106155551,
+                "p_value": 0.19560718832411617
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.1431122329517769,
+            "hr_per_sd": 1.1538592954338023,
+            "se": 0.11058237106155551,
+            "p_value": 0.19560718832411617
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 1.6761838015240755,
+            "p_value": 0.195432308220693,
+            "df": 1
+          }
+        }
+      },
+      "note": "Incremental validity: predictor HR and p are from the joint model (age + predictor + sex). LRT compares that model to age-only (M0)."
+    }
+  },
+  "age_acceleration": {
+    "FHS_train": {
+      "split_label": "FHS_train",
+      "n": 2727,
+      "n_events": 489,
+      "baseline_model": "age_z + sex",
+      "baseline": {
+        "n": 2727,
+        "n_events": 489,
+        "formula": "age_z + sex",
+        "c_index": 0.811806244501432,
+        "log_likelihood": -3422.985625189113,
+        "concordance_lifelines": 0.811832987886756,
+        "coefficients": {
+          "age_z": {
+            "coef": 1.383035517762009,
+            "hr_per_sd": 3.98698584363458,
+            "se": 0.06108115930582583,
+            "p_value": 1.65063065040937e-113
+          },
+          "sex": {
+            "coef": -0.34805681894885937,
+            "hr_per_sd": 0.7060587575582078,
+            "se": 0.088310043972976,
+            "p_value": 8.103949783041684e-05
+          }
+        }
+      },
+      "predictors": {
+        "Horvath_accel": {
+          "label": "Horvath acceleration",
+          "formula_joint": "age_z + Horvath_accel_z + sex",
+          "model_age_plus_predictor": {
+            "n": 2727,
+            "n_events": 489,
+            "formula": "age_z + Horvath_accel_z + sex",
+            "c_index": 0.8115848978904218,
+            "log_likelihood": -3422.959774799577,
+            "concordance_lifelines": 0.8116098122423772,
+            "coefficients": {
+              "age_z": {
+                "coef": 1.3757588543632662,
+                "hr_per_sd": 3.9580791892220613,
+                "se": 0.06898301674976676,
+                "p_value": 1.7088845372335333e-88
+              },
+              "Horvath_accel_z": {
+                "coef": -0.01104149279217166,
+                "hr_per_sd": 0.9890192407541731,
+                "se": 0.04864234122439949,
+                "p_value": 0.8204288363210466
+              },
+              "sex": {
+                "coef": -0.3505611996688697,
+                "hr_per_sd": 0.7042927299443704,
+                "se": 0.08899443478351789,
+                "p_value": 8.177549955600618e-05
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": -0.01104149279217166,
+            "hr_per_sd": 0.9890192407541731,
+            "se": 0.04864234122439949,
+            "p_value": 0.8204288363210466
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 0.05170077907132509,
+            "p_value": 0.8201297844012777,
+            "df": 1
+          }
+        },
+        "Hannum_accel": {
+          "label": "Hannum acceleration",
+          "formula_joint": "age_z + Hannum_accel_z + sex",
+          "model_age_plus_predictor": {
+            "n": 2727,
+            "n_events": 489,
+            "formula": "age_z + Hannum_accel_z + sex",
+            "c_index": 0.8148503453568687,
+            "log_likelihood": -3420.0292365855603,
+            "concordance_lifelines": 0.814877440544979,
+            "coefficients": {
+              "age_z": {
+                "coef": 1.4861929473504087,
+                "hr_per_sd": 4.420235376839746,
+                "se": 0.0741618079583814,
+                "p_value": 2.4741582899352314e-89
+              },
+              "Hannum_accel_z": {
+                "coef": 0.13062954090179757,
+                "hr_per_sd": 1.1395455480906438,
+                "se": 0.053299592223412004,
+                "p_value": 0.014251758276303178
+              },
+              "sex": {
+                "coef": -0.30418890291935863,
+                "hr_per_sd": 0.7377214955430382,
+                "se": 0.09017825477652797,
+                "p_value": 0.0007430111826351029
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.13062954090179757,
+            "hr_per_sd": 1.1395455480906438,
+            "se": 0.053299592223412004,
+            "p_value": 0.014251758276303178
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 5.912777207105137,
+            "p_value": 0.015031456382027766,
+            "df": 1
+          }
+        },
+        "PhenoAge_accel": {
+          "label": "PhenoAge acceleration",
+          "formula_joint": "age_z + PhenoAge_accel_z + sex",
+          "model_age_plus_predictor": {
+            "n": 2727,
+            "n_events": 489,
+            "formula": "age_z + PhenoAge_accel_z + sex",
+            "c_index": 0.8214168054957602,
+            "log_likelihood": -3406.370433552658,
+            "concordance_lifelines": 0.8214435767990904,
+            "coefficients": {
+              "age_z": {
+                "coef": 1.4878738361707338,
+                "hr_per_sd": 4.427671549006373,
+                "se": 0.06406423890570874,
+                "p_value": 2.562608941815039e-119
+              },
+              "PhenoAge_accel_z": {
+                "coef": 0.24970057497255516,
+                "hr_per_sd": 1.2836410048962374,
+                "se": 0.04275656021569556,
+                "p_value": 5.218423867775925e-09
+              },
+              "sex": {
+                "coef": -0.2639017598599316,
+                "hr_per_sd": 0.7680489891908366,
+                "se": 0.0895507691298511,
+                "p_value": 0.0032092369093595354
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.24970057497255516,
+            "hr_per_sd": 1.2836410048962374,
+            "se": 0.04275656021569556,
+            "p_value": 5.218423867775925e-09
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 33.23038327290942,
+            "p_value": 8.18614119261715e-09,
+            "df": 1
+          }
+        },
+        "GrimAge_accel": {
+          "label": "GrimAge acceleration",
+          "formula_joint": "age_z + GrimAge_accel_z + sex",
+          "model_age_plus_predictor": {
+            "n": 2727,
+            "n_events": 489,
+            "formula": "age_z + GrimAge_accel_z + sex",
+            "c_index": 0.8439314527450723,
+            "log_likelihood": -3341.883521230399,
+            "concordance_lifelines": 0.8439464191304104,
+            "coefficients": {
+              "age_z": {
+                "coef": 1.4779272600493092,
+                "hr_per_sd": 4.383849676986632,
+                "se": 0.06370373320376964,
+                "p_value": 4.552133488490395e-119
+              },
+              "GrimAge_accel_z": {
+                "coef": 0.5302577793789355,
+                "hr_per_sd": 1.6993703147859731,
+                "se": 0.03858563316525917,
+                "p_value": 5.65978847451034e-43
+              },
+              "sex": {
+                "coef": -0.14965917181683452,
+                "hr_per_sd": 0.8610013799581551,
+                "se": 0.08941831145826346,
+                "p_value": 0.09419013689882132
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.5302577793789355,
+            "hr_per_sd": 1.6993703147859731,
+            "se": 0.03858563316525917,
+            "p_value": 5.65978847451034e-43
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 162.204207917428,
+            "p_value": 3.733149584793305e-37,
+            "df": 1
+          }
+        },
+        "EpiClock_accel": {
+          "label": "EpiClock acceleration",
+          "formula_joint": "age_z + EpiClock_accel_z + sex",
+          "model_age_plus_predictor": {
+            "n": 2727,
+            "n_events": 489,
+            "formula": "age_z + EpiClock_accel_z + sex",
+            "c_index": 0.8156065739475507,
+            "log_likelihood": -3417.892068010441,
+            "concordance_lifelines": 0.8156325883228139,
+            "coefficients": {
+              "age_z": {
+                "coef": 1.4803269892292639,
+                "hr_per_sd": 4.3943823617179305,
+                "se": 0.06774612912586482,
+                "p_value": 7.589414971400869e-106
+              },
+              "EpiClock_accel_z": {
+                "coef": 0.14052242725209216,
+                "hr_per_sd": 1.1508748902367054,
+                "se": 0.0425174088202204,
+                "p_value": 0.0009495734422625638
+              },
+              "sex": {
+                "coef": -0.3024078245006507,
+                "hr_per_sd": 0.7390366061877067,
+                "se": 0.089404042064276,
+                "p_value": 0.0007183322032796697
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.14052242725209216,
+            "hr_per_sd": 1.1508748902367054,
+            "se": 0.0425174088202204,
+            "p_value": 0.0009495734422625638
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 10.18711435734349,
+            "p_value": 0.001414254613063893,
+            "df": 1
+          }
+        }
+      },
+      "note": "Incremental validity: predictor HR and p are from the joint model (age + predictor + sex). LRT compares that model to age-only (M0)."
+    },
+    "FHS_val": {
+      "split_label": "FHS_val",
+      "n": 482,
+      "n_events": 86,
+      "baseline_model": "age_z + sex",
+      "baseline": {
+        "n": 482,
+        "n_events": 86,
+        "formula": "age_z + sex",
+        "c_index": 0.8301263059410572,
+        "log_likelihood": -435.9349145445538,
+        "concordance_lifelines": 0.8301527907701902,
+        "coefficients": {
+          "age_z": {
+            "coef": 1.4739544743334578,
+            "hr_per_sd": 4.36646813104928,
+            "se": 0.1490693371757559,
+            "p_value": 4.706680648829353e-23
+          },
+          "sex": {
+            "coef": -0.8269029413345108,
+            "hr_per_sd": 0.4374018499456411,
+            "se": 0.21542226156643726,
+            "p_value": 0.0001237774744720163
+          }
+        }
+      },
+      "predictors": {
+        "Horvath_accel": {
+          "label": "Horvath acceleration",
+          "formula_joint": "age_z + Horvath_accel_z + sex",
+          "model_age_plus_predictor": {
+            "n": 482,
+            "n_events": 86,
+            "formula": "age_z + Horvath_accel_z + sex",
+            "c_index": 0.8386402619678778,
+            "log_likelihood": -434.4703891578897,
+            "concordance_lifelines": 0.8386654193950733,
+            "coefficients": {
+              "age_z": {
+                "coef": 1.6124983854155874,
+                "hr_per_sd": 5.0153258050511536,
+                "se": 0.1676536141248314,
+                "p_value": 6.710050002954644e-22
+              },
+              "Horvath_accel_z": {
+                "coef": 0.20372300329813622,
+                "hr_per_sd": 1.2259585199530534,
+                "se": 0.11659429399298671,
+                "p_value": 0.08058859427756367
+              },
+              "sex": {
+                "coef": -0.8011056353632612,
+                "hr_per_sd": 0.4488324446600713,
+                "se": 0.21586991145013687,
+                "p_value": 0.0002063952803812383
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.20372300329813622,
+            "hr_per_sd": 1.2259585199530534,
+            "se": 0.11659429399298671,
+            "p_value": 0.08058859427756367
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 2.9290507733281856,
+            "p_value": 0.08699863043759903,
+            "df": 1
+          }
+        },
+        "Hannum_accel": {
+          "label": "Hannum acceleration",
+          "formula_joint": "age_z + Hannum_accel_z + sex",
+          "model_age_plus_predictor": {
+            "n": 482,
+            "n_events": 86,
+            "formula": "age_z + Hannum_accel_z + sex",
+            "c_index": 0.8364883829720879,
+            "log_likelihood": -434.0417516079487,
+            "concordance_lifelines": 0.8365138758964764,
+            "coefficients": {
+              "age_z": {
+                "coef": 1.6492760307783023,
+                "hr_per_sd": 5.203211498288629,
+                "se": 0.17147463849753325,
+                "p_value": 6.6998270254114575e-22
+              },
+              "Hannum_accel_z": {
+                "coef": 0.2560636154609718,
+                "hr_per_sd": 1.2918349059988232,
+                "se": 0.1302497834254783,
+                "p_value": 0.04930522585405342
+              },
+              "sex": {
+                "coef": -0.7116144397825496,
+                "hr_per_sd": 0.4908511078796701,
+                "se": 0.22355448021468743,
+                "p_value": 0.001456663763881113
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.2560636154609718,
+            "hr_per_sd": 1.2918349059988232,
+            "se": 0.1302497834254783,
+            "p_value": 0.04930522585405342
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 3.7863258732102167,
+            "p_value": 0.05167295654181176,
+            "df": 1
+          }
+        },
+        "PhenoAge_accel": {
+          "label": "PhenoAge acceleration",
+          "formula_joint": "age_z + PhenoAge_accel_z + sex",
+          "model_age_plus_predictor": {
+            "n": 482,
+            "n_events": 86,
+            "formula": "age_z + PhenoAge_accel_z + sex",
+            "c_index": 0.8354904101044753,
+            "log_likelihood": -434.26618469592114,
+            "concordance_lifelines": 0.8355160586217649,
+            "coefficients": {
+              "age_z": {
+                "coef": 1.5473711704067106,
+                "hr_per_sd": 4.699100795975111,
+                "se": 0.15396355337549786,
+                "p_value": 9.164088728558726e-24
+              },
+              "PhenoAge_accel_z": {
+                "coef": 0.19218971988949587,
+                "hr_per_sd": 1.2119004167690777,
+                "se": 0.1036137539282438,
+                "p_value": 0.06361523938738325
+              },
+              "sex": {
+                "coef": -0.7502366125064217,
+                "hr_per_sd": 0.4722547981288117,
+                "se": 0.22003246385758135,
+                "p_value": 0.000650431300306386
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.19218971988949587,
+            "hr_per_sd": 1.2119004167690777,
+            "se": 0.1036137539282438,
+            "p_value": 0.06361523938738325
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 3.3374596972653308,
+            "p_value": 0.06771908324032964,
+            "df": 1
+          }
+        },
+        "GrimAge_accel": {
+          "label": "GrimAge acceleration",
+          "formula_joint": "age_z + GrimAge_accel_z + sex",
+          "model_age_plus_predictor": {
+            "n": 482,
+            "n_events": 86,
+            "formula": "age_z + GrimAge_accel_z + sex",
+            "c_index": 0.8470294713862467,
+            "log_likelihood": -429.3233515956912,
+            "concordance_lifelines": 0.8470533208606174,
+            "coefficients": {
+              "age_z": {
+                "coef": 1.5593128157963967,
+                "hr_per_sd": 4.755552181703443,
+                "se": 0.1535654099483587,
+                "p_value": 3.1784928454010916e-24
+              },
+              "GrimAge_accel_z": {
+                "coef": 0.37889900993855885,
+                "hr_per_sd": 1.4606755145845083,
+                "se": 0.09991685887143863,
+                "p_value": 0.00014935290837173374
+              },
+              "sex": {
+                "coef": -0.604548598565294,
+                "hr_per_sd": 0.5463209810626745,
+                "se": 0.22597929540470235,
+                "p_value": 0.0074676018733369496
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.37889900993855885,
+            "hr_per_sd": 1.4606755145845083,
+            "se": 0.09991685887143863,
+            "p_value": 0.00014935290837173374
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 13.223125897725254,
+            "p_value": 0.0002765160692804925,
+            "df": 1
+          }
+        },
+        "EpiClock_accel": {
+          "label": "EpiClock acceleration",
+          "formula_joint": "age_z + EpiClock_accel_z + sex",
+          "model_age_plus_predictor": {
+            "n": 482,
+            "n_events": 86,
+            "formula": "age_z + EpiClock_accel_z + sex",
+            "c_index": 0.8387026352721035,
+            "log_likelihood": -432.6542845692016,
+            "concordance_lifelines": 0.8387277829747427,
+            "coefficients": {
+              "age_z": {
+                "coef": 1.637580497541322,
+                "hr_per_sd": 5.142711643923786,
+                "se": 0.15792873791658438,
+                "p_value": 3.4270064311105673e-25
+              },
+              "EpiClock_accel_z": {
+                "coef": 0.2634424193015497,
+                "hr_per_sd": 1.3014023571274906,
+                "se": 0.10012910342107718,
+                "p_value": 0.008512716080983498
+              },
+              "sex": {
+                "coef": -0.7498976176128224,
+                "hr_per_sd": 0.472414917232101,
+                "se": 0.21769418624053843,
+                "p_value": 0.0005716308209431027
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.2634424193015497,
+            "hr_per_sd": 1.3014023571274906,
+            "se": 0.10012910342107718,
+            "p_value": 0.008512716080983498
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 6.561259950704425,
+            "p_value": 0.01042225472812688,
+            "df": 1
+          }
+        }
+      },
+      "note": "Incremental validity: predictor HR and p are from the joint model (age + predictor + sex). LRT compares that model to age-only (M0)."
+    },
+    "WHI": {
+      "split_label": "WHI",
+      "n": 510,
+      "n_events": 202,
+      "baseline_model": "age_z",
+      "baseline": {
+        "n": 510,
+        "n_events": 202,
+        "formula": "age_z",
+        "c_index": 0.6936162104626867,
+        "log_likelihood": -1134.231247920477,
+        "concordance_lifelines": 0.6936111220614709,
+        "coefficients": {
+          "age_z": {
+            "coef": 0.773974903348967,
+            "hr_per_sd": 2.1683682005277376,
+            "se": 0.08270028365760937,
+            "p_value": 8.065212014479723e-21
+          }
+        }
+      },
+      "predictors": {
+        "Horvath_accel": {
+          "label": "Horvath acceleration",
+          "formula_joint": "age_z + Horvath_accel_z",
+          "model_age_plus_predictor": {
+            "n": 510,
+            "n_events": 202,
+            "formula": "age_z + Horvath_accel_z",
+            "c_index": 0.6942009750456642,
+            "log_likelihood": -1134.1548398029183,
+            "concordance_lifelines": 0.6941958712763301,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.7647198700550172,
+                "hr_per_sd": 2.148392461290195,
+                "se": 0.08589035100458488,
+                "p_value": 5.414043475310988e-19
+              },
+              "Horvath_accel_z": {
+                "coef": -0.026785046585501748,
+                "hr_per_sd": 0.9735704913354177,
+                "se": 0.06850293808055397,
+                "p_value": 0.6957929435281109
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": -0.026785046585501748,
+            "hr_per_sd": 0.9735704913354177,
+            "se": 0.06850293808055397,
+            "p_value": 0.6957929435281109
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 0.15281623511737052,
+            "p_value": 0.6958584607797467,
+            "df": 1
+          }
+        },
+        "Hannum_accel": {
+          "label": "Hannum acceleration",
+          "formula_joint": "age_z + Hannum_accel_z",
+          "model_age_plus_predictor": {
+            "n": 510,
+            "n_events": 202,
+            "formula": "age_z + Hannum_accel_z",
+            "c_index": 0.6935964992969684,
+            "log_likelihood": -1134.0245056223905,
+            "concordance_lifelines": 0.693591411413779,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.7885458261979781,
+                "hr_per_sd": 2.2001946334432354,
+                "se": 0.08581180435706644,
+                "p_value": 3.956025508859357e-20
+              },
+              "Hannum_accel_z": {
+                "coef": 0.046454855669131837,
+                "hr_per_sd": 1.0475507870217273,
+                "se": 0.07236907885668546,
+                "p_value": 0.5209278501684874
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.046454855669131837,
+            "hr_per_sd": 1.0475507870217273,
+            "se": 0.07236907885668546,
+            "p_value": 0.5209278501684874
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 0.4134845961730207,
+            "p_value": 0.5202061397367539,
+            "df": 1
+          }
+        },
+        "PhenoAge_accel": {
+          "label": "PhenoAge acceleration",
+          "formula_joint": "age_z + PhenoAge_accel_z",
+          "model_age_plus_predictor": {
+            "n": 510,
+            "n_events": 202,
+            "formula": "age_z + PhenoAge_accel_z",
+            "c_index": 0.6944112274799932,
+            "log_likelihood": -1134.0513333532103,
+            "concordance_lifelines": 0.6944061181850436,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.783539413551,
+                "hr_per_sd": 2.1892070782716213,
+                "se": 0.08437953988868212,
+                "p_value": 1.603561553134396e-20
+              },
+              "PhenoAge_accel_z": {
+                "coef": 0.043603470299112136,
+                "hr_per_sd": 1.0445680704912892,
+                "se": 0.07266083738262273,
+                "p_value": 0.5484423276553114
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.043603470299112136,
+            "hr_per_sd": 1.0445680704912892,
+            "se": 0.07266083738262273,
+            "p_value": 0.5484423276553114
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 0.3598291345333564,
+            "p_value": 0.5486011451123989,
+            "df": 1
+          }
+        },
+        "GrimAge_accel": {
+          "label": "GrimAge acceleration",
+          "formula_joint": "age_z + GrimAge_accel_z",
+          "model_age_plus_predictor": {
+            "n": 510,
+            "n_events": 202,
+            "formula": "age_z + GrimAge_accel_z",
+            "c_index": 0.7141355339754794,
+            "log_likelihood": -1122.5088393928643,
+            "concordance_lifelines": 0.7141299063087213,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.7875380079994638,
+                "hr_per_sd": 2.197978354242223,
+                "se": 0.08261802186020718,
+                "p_value": 1.538680988102623e-21
+              },
+              "GrimAge_accel_z": {
+                "coef": 0.3539687741743997,
+                "hr_per_sd": 1.4247106980175104,
+                "se": 0.07188341007536185,
+                "p_value": 8.470323926160605e-07
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.3539687741743997,
+            "hr_per_sd": 1.4247106980175104,
+            "se": 0.07188341007536185,
+            "p_value": 8.470323926160605e-07
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 23.444817055225485,
+            "p_value": 1.2854858271107044e-06,
+            "df": 1
+          }
+        },
+        "EpiClock_accel": {
+          "label": "EpiClock acceleration",
+          "formula_joint": "age_z + EpiClock_accel_z",
+          "model_age_plus_predictor": {
+            "n": 510,
+            "n_events": 202,
+            "formula": "age_z + EpiClock_accel_z",
+            "c_index": 0.6949368585658156,
+            "log_likelihood": -1133.8703924476763,
+            "concordance_lifelines": 0.6949317354568271,
+            "coefficients": {
+              "age_z": {
+                "coef": 0.7997539322729827,
+                "hr_per_sd": 2.2249933620667854,
+                "se": 0.08800013460172926,
+                "p_value": 1.0078577803441453e-19
+              },
+              "EpiClock_accel_z": {
+                "coef": 0.06467368758000049,
+                "hr_per_sd": 1.0668108539496794,
+                "se": 0.0761659665367901,
+                "p_value": 0.39581713722879686
+              }
+            }
+          },
+          "predictor_in_joint_model": {
+            "coef": 0.06467368758000049,
+            "hr_per_sd": 1.0668108539496794,
+            "se": 0.0761659665367901,
+            "p_value": 0.39581713722879686
+          },
+          "lrt_age_vs_age_plus_predictor": {
+            "lr_stat": 0.7217109456014441,
+            "p_value": 0.3955832608427734,
+            "df": 1
+          }
+        }
+      },
+      "note": "Incremental validity: predictor HR and p are from the joint model (age + predictor + sex). LRT compares that model to age-only (M0)."
+    }
+  },
+  "grim_age_accel_note": "GrimAge_accel = regression residual of GrimAge on age; other clocks = clock \u2212 age"
+}

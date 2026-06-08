@@ -1,0 +1,46 @@
+{
+  "n_samples": 3719,
+  "n_features": 1372416,
+  "n_cpg": 393234,
+  "n_snp": 979182,
+  "fdr": 0.05,
+  "k_sigma": 5.0,
+  "age_threshold": {
+    "median_abs": 0.004008679883554578,
+    "sigma_mad": 0.0037475553112694122,
+    "threshold": 0.022746456439901638
+  },
+  "risk_threshold": {
+    "median_abs": 0.0003438746934989467,
+    "sigma_mad": 0.00032171606111393384,
+    "threshold": 0.001952454999068616
+  },
+  "n_selected_age": 14488,
+  "n_selected_age_cpg": 2512,
+  "n_selected_age_snp": 11976,
+  "n_selected_risk": 14374,
+  "n_selected_risk_cpg": 2435,
+  "n_selected_risk_snp": 11939,
+  "n_selected_either": 15957,
+  "n_selected_both": 12905,
+  "n_selected_both_cpg": 2141,
+  "n_selected_both_snp": 10764,
+  "tallies_age": {
+    "n_q05": 1290824,
+    "n_q01": 1265508,
+    "n_q1e6": 1171222,
+    "n_bonferroni_5pc": 1145927,
+    "n_top1pct_abs": 13724,
+    "n_top0p5pct_abs": 6863,
+    "n_top0p1pct_abs": 1373
+  },
+  "tallies_risk": {
+    "n_q05": 1291762,
+    "n_q01": 1266711,
+    "n_q1e6": 1173117,
+    "n_bonferroni_5pc": 1148501,
+    "n_top1pct_abs": 13725,
+    "n_top0p5pct_abs": 6863,
+    "n_top0p1pct_abs": 1373
+  }
+}

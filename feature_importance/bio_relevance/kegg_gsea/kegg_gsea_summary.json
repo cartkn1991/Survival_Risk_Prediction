@@ -1,0 +1,81 @@
+{
+  "gene_sets": "KEGG_2021_Human",
+  "score_col": "mean",
+  "gene_agg": "sum",
+  "cpg": {
+    "n_genes": 2569,
+    "top5": [
+      {
+        "gene": "MTA3",
+        "score": 0.0018249155
+      },
+      {
+        "gene": "KCNG3",
+        "score": 0.0015932213000000002
+      },
+      {
+        "gene": "LRBA",
+        "score": 0.001060221406
+      },
+      {
+        "gene": "OCA2",
+        "score": 0.0009811394
+      },
+      {
+        "gene": "LMAN2",
+        "score": 0.0009279022
+      }
+    ],
+    "n_kegg_terms_tested": 116,
+    "top_pathway": {
+      "Name": "prerank",
+      "Term": "Adherens junction",
+      "ES": -0.5168070081951717,
+      "NES": -1.4304777856073392,
+      "NOM p-val": 0.08823529411764706,
+      "FDR q-val": 0.7250996015936254,
+      "FWER p-val": 0.8994974874371859,
+      "Tag %": "10/15",
+      "Gene %": "29.12%",
+      "Lead_genes": "NECTIN1;TGFBR1;TCF7;NECTIN3;CREBBP;ERBB2;ACTB;TCF7L2;IGF1R;NECTIN4"
+    }
+  },
+  "snp": {
+    "n_genes": 798,
+    "top5": [
+      {
+        "gene": "FEZ2",
+        "score": 0.0003654428
+      },
+      {
+        "gene": "TRPS1",
+        "score": 0.0003629514804
+      },
+      {
+        "gene": "LRP2",
+        "score": 0.00034911852
+      },
+      {
+        "gene": "FARS2",
+        "score": 0.00034837058
+      },
+      {
+        "gene": "CTNNA2",
+        "score": 0.00034034604
+      }
+    ],
+    "n_kegg_terms_tested": 2,
+    "top_pathway": {
+      "Name": "prerank",
+      "Term": "Pathways in cancer",
+      "ES": 0.36136816129951993,
+      "NES": 1.0277880521082474,
+      "NOM p-val": 0.3893805309734513,
+      "FDR q-val": 0.8198198198198198,
+      "FWER p-val": 0.3869346733668342,
+      "Tag %": "5/24",
+      "Gene %": "15.91%",
+      "Lead_genes": "CTNNA2;ALK;MAX;CTNNA3;PLD1"
+    }
+  }
+}

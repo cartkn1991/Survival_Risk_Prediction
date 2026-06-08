@@ -1,0 +1,74 @@
+{
+  "source": "F:\\FHS_phenotypic data\\FHS_DAF_COX\\FHS_all_daf\\All_data_cox.csv",
+  "n_rows_raw": 3693,
+  "n_rows": 3693,
+  "id_column": "shareid",
+  "column_map": {
+    "cigarettes_per_day": "No of cig/day",
+    "alcohol_amount_per_occasion": "Amount of alcohol consumption at a time",
+    "sleep_hours": "Sleep hours",
+    "hdl": "HDL cholesterol",
+    "total_cholesterol": "Total Cholesterol",
+    "triglycerides": "Triglycerides",
+    "glucose": "Glucose"
+  },
+  "note_alcohol": "alcohol_amount_per_occasion is drinks/amount per occasion (not per week).",
+  "smoking_status_rule": "cigarettes_per_day <= 0 -> never; else current (no former/current distinction in source).",
+  "winsor": {
+    "cigarettes_per_day": {
+      "lo": 0.0,
+      "hi": 30.0,
+      "q_lo": 0.01,
+      "q_hi": 0.99
+    },
+    "alcohol_amount_per_occasion": {
+      "lo": 0.0,
+      "hi": 6.0,
+      "q_lo": 0.01,
+      "q_hi": 0.99
+    },
+    "sleep_hours": {
+      "lo": 5.0,
+      "hi": 10.0,
+      "q_lo": 0.01,
+      "q_hi": 0.99
+    },
+    "hdl": {
+      "lo": 26.0,
+      "hi": 101.15999999999985,
+      "q_lo": 0.01,
+      "q_hi": 0.99
+    },
+    "total_cholesterol": {
+      "lo": 126.0,
+      "hi": 296.0,
+      "q_lo": 0.01,
+      "q_hi": 0.99
+    },
+    "triglycerides": {
+      "lo": 36.0,
+      "hi": 437.3199999999997,
+      "q_lo": 0.01,
+      "q_hi": 0.99
+    },
+    "glucose": {
+      "lo": 77.0,
+      "hi": 209.07999999999993,
+      "q_lo": 0.01,
+      "q_hi": 0.99
+    }
+  },
+  "missingness": {
+    "subject_id": 0.0,
+    "merge_key": 0.0,
+    "cigarettes_per_day": 0.0,
+    "alcohol_amount_per_occasion": 0.0,
+    "sleep_hours": 0.0,
+    "alcohol_drinks_per_week": 0.0,
+    "smoking_status": 0.0,
+    "hdl": 0.0,
+    "total_cholesterol": 0.0,
+    "triglycerides": 0.0,
+    "glucose": 0.0
+  }
+}

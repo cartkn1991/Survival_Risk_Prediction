@@ -1,0 +1,227 @@
+{
+  "n_snps": 20,
+  "n_replicated_strict": 2,
+  "n_same_sign": 5,
+  "rows": [
+    {
+      "snp": "9:1349501_T",
+      "fhs_hr_per_allele": 2.512963546174914,
+      "fhs_p": 2.953617796571732e-06,
+      "whi_hr_per_allele": 1.0493713638056483,
+      "whi_p": 0.9231759016746033,
+      "same_sign": true,
+      "replicated": false,
+      "meta_hr": 2.2341419450925373,
+      "meta_p": 1.1689420150744726e-05
+    },
+    {
+      "snp": "11:125948139_G",
+      "fhs_hr_per_allele": 0.7550570667520332,
+      "fhs_p": 3.323077257295955e-05,
+      "whi_hr_per_allele": 0.866131456409733,
+      "whi_p": 0.7465749484198274,
+      "same_sign": true,
+      "replicated": false,
+      "meta_hr": 0.7574076634124115,
+      "meta_p": 3.3032750612636416e-05
+    },
+    {
+      "snp": "12:46600556_T",
+      "fhs_hr_per_allele": 1.6220865449952675,
+      "fhs_p": 0.0001282707135282,
+      "whi_hr_per_allele": 1.2705336906026157,
+      "whi_p": 0.0322311403296071,
+      "same_sign": true,
+      "replicated": true,
+      "meta_hr": 1.414473157677475,
+      "meta_p": 3.443129196381807e-05
+    },
+    {
+      "snp": "11:127103604_C",
+      "fhs_hr_per_allele": 1.1515915168302338,
+      "fhs_p": 0.0338738972075908,
+      "whi_hr_per_allele": 1.7629089874360642,
+      "whi_p": 0.04570614285423051,
+      "same_sign": true,
+      "replicated": true,
+      "meta_hr": 1.177428830594829,
+      "meta_p": 0.01168024192608944
+    },
+    {
+      "snp": "3:183364116_C",
+      "fhs_hr_per_allele": 1.2914730768398728,
+      "fhs_p": 4.527441988760981e-05,
+      "whi_hr_per_allele": 0.780938040116829,
+      "whi_p": 0.02944013068216826,
+      "same_sign": false,
+      "replicated": false,
+      "meta_hr": 1.1482180083849167,
+      "meta_p": 0.011811826264483443
+    },
+    {
+      "snp": "6:74783902_C",
+      "fhs_hr_per_allele": 1.985576063351233,
+      "fhs_p": 7.842824590865924e-05,
+      "whi_hr_per_allele": 1.0071581369205622,
+      "whi_p": 0.9424775236145759,
+      "same_sign": true,
+      "replicated": false,
+      "meta_hr": 1.1891085477052132,
+      "meta_p": 0.04378993730985888
+    },
+    {
+      "snp": "10:26481651_C",
+      "fhs_hr_per_allele": 1.0753868422740684,
+      "fhs_p": 0.6399419953916963,
+      "whi_hr_per_allele": NaN,
+      "whi_p": NaN,
+      "same_sign": NaN,
+      "replicated": false,
+      "meta_hr": NaN,
+      "meta_p": NaN
+    },
+    {
+      "snp": "10:71827020_A",
+      "fhs_hr_per_allele": 0.838522886650843,
+      "fhs_p": 0.3899452958068932,
+      "whi_hr_per_allele": NaN,
+      "whi_p": NaN,
+      "same_sign": NaN,
+      "replicated": false,
+      "meta_hr": NaN,
+      "meta_p": NaN
+    },
+    {
+      "snp": "12:74449855_G",
+      "fhs_hr_per_allele": 0.924908563498466,
+      "fhs_p": 0.7569681322314439,
+      "whi_hr_per_allele": NaN,
+      "whi_p": NaN,
+      "same_sign": NaN,
+      "replicated": false,
+      "meta_hr": NaN,
+      "meta_p": NaN
+    },
+    {
+      "snp": "12:95105766_G",
+      "fhs_hr_per_allele": 0.9883941578123454,
+      "fhs_p": 0.8834432457229178,
+      "whi_hr_per_allele": NaN,
+      "whi_p": NaN,
+      "same_sign": NaN,
+      "replicated": false,
+      "meta_hr": NaN,
+      "meta_p": NaN
+    },
+    {
+      "snp": "14:105500553_A",
+      "fhs_hr_per_allele": 0.9781773684009134,
+      "fhs_p": 0.7220982670028911,
+      "whi_hr_per_allele": NaN,
+      "whi_p": NaN,
+      "same_sign": NaN,
+      "replicated": false,
+      "meta_hr": NaN,
+      "meta_p": NaN
+    },
+    {
+      "snp": "14:52463525_A",
+      "fhs_hr_per_allele": 1.0460188805454196,
+      "fhs_p": 0.4306504596063774,
+      "whi_hr_per_allele": NaN,
+      "whi_p": NaN,
+      "same_sign": NaN,
+      "replicated": false,
+      "meta_hr": NaN,
+      "meta_p": NaN
+    },
+    {
+      "snp": "15:86765886_T",
+      "fhs_hr_per_allele": 1.0356142243374309,
+      "fhs_p": 0.8203610661182508,
+      "whi_hr_per_allele": NaN,
+      "whi_p": NaN,
+      "same_sign": NaN,
+      "replicated": false,
+      "meta_hr": NaN,
+      "meta_p": NaN
+    },
+    {
+      "snp": "1:225555512_C",
+      "fhs_hr_per_allele": 0.8591574481241786,
+      "fhs_p": 0.360114674143884,
+      "whi_hr_per_allele": NaN,
+      "whi_p": NaN,
+      "same_sign": NaN,
+      "replicated": false,
+      "meta_hr": NaN,
+      "meta_p": NaN
+    },
+    {
+      "snp": "1:86471719_C",
+      "fhs_hr_per_allele": 0.8884173410538998,
+      "fhs_p": 0.5669376568856769,
+      "whi_hr_per_allele": NaN,
+      "whi_p": NaN,
+      "same_sign": NaN,
+      "replicated": false,
+      "meta_hr": NaN,
+      "meta_p": NaN
+    },
+    {
+      "snp": "2:172326907_A",
+      "fhs_hr_per_allele": 0.9192171537123246,
+      "fhs_p": 0.1546031899229517,
+      "whi_hr_per_allele": NaN,
+      "whi_p": NaN,
+      "same_sign": NaN,
+      "replicated": false,
+      "meta_hr": NaN,
+      "meta_p": NaN
+    },
+    {
+      "snp": "2:177520106_C",
+      "fhs_hr_per_allele": 1.012959157969534,
+      "fhs_p": 0.957447525768282,
+      "whi_hr_per_allele": NaN,
+      "whi_p": NaN,
+      "same_sign": NaN,
+      "replicated": false,
+      "meta_hr": NaN,
+      "meta_p": NaN
+    },
+    {
+      "snp": "3:35587091_T",
+      "fhs_hr_per_allele": 1.1107281456773916,
+      "fhs_p": 0.6038325908394451,
+      "whi_hr_per_allele": NaN,
+      "whi_p": NaN,
+      "same_sign": NaN,
+      "replicated": false,
+      "meta_hr": NaN,
+      "meta_p": NaN
+    },
+    {
+      "snp": "3:80439794_T",
+      "fhs_hr_per_allele": 1.0052466484776892,
+      "fhs_p": 0.974112888213902,
+      "whi_hr_per_allele": NaN,
+      "whi_p": NaN,
+      "same_sign": NaN,
+      "replicated": false,
+      "meta_hr": NaN,
+      "meta_p": NaN
+    },
+    {
+      "snp": "4:183579487_T",
+      "fhs_hr_per_allele": 0.7837963486830557,
+      "fhs_p": 6.68922301605761e-05,
+      "whi_hr_per_allele": NaN,
+      "whi_p": NaN,
+      "same_sign": NaN,
+      "replicated": false,
+      "meta_hr": NaN,
+      "meta_p": NaN
+    }
+  ]
+}

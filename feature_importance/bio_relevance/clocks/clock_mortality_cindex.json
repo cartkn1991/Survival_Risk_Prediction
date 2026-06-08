@@ -1,0 +1,172 @@
+{
+  "FHS": {
+    "predictors": {
+      "AESurv_log_h": {
+        "cindex_all": 0.8128355479412475,
+        "cindex_train": 0.8192744697976527,
+        "cindex_val": 0.777264930609699
+      },
+      "chronological_age": {
+        "cindex_all": 0.8105961255409048,
+        "cindex_train": 0.8085398611085113,
+        "cindex_val": 0.8244347419304537
+      },
+      "Horvath": {
+        "cindex_all": 0.7949099710044428,
+        "cindex_train": 0.7886444040956142,
+        "cindex_val": 0.8337127709340403
+      },
+      "Hannum": {
+        "cindex_all": 0.8112073097357767,
+        "cindex_train": 0.8070465904198566,
+        "cindex_val": 0.8353344768439108
+      },
+      "PhenoAge": {
+        "cindex_all": 0.8125377741065936,
+        "cindex_train": 0.8110411246092507,
+        "cindex_val": 0.8227662560424138
+      },
+      "DunedinPACE": {
+        "cindex_all": 0.660048337259461,
+        "cindex_train": 0.6631843962338319,
+        "cindex_val": 0.6411351941369094
+      },
+      "GrimAge": {
+        "cindex_all": 0.8435762773511726,
+        "cindex_train": 0.8438238212006065,
+        "cindex_val": 0.8441914860439732
+      },
+      "EpiClock": {
+        "cindex_all": 0.8158941883113572,
+        "cindex_train": 0.8119480373621848,
+        "cindex_val": 0.8385155153594261
+      },
+      "Horvath_accel": {
+        "cindex_all": 0.33848046963964606,
+        "cindex_train": 0.33104561705632407,
+        "cindex_val": 0.38306564790269765
+      },
+      "Hannum_accel": {
+        "cindex_all": 0.32605419075881337,
+        "cindex_train": 0.3201869981094285,
+        "cindex_val": 0.3600187119912677
+      },
+      "PhenoAge_accel": {
+        "cindex_all": 0.4735073066764565,
+        "cindex_train": 0.474068285195515,
+        "cindex_val": 0.46960860751598316
+      },
+      "GrimAge_accel": {
+        "cindex_all": 0.45997015463164087,
+        "cindex_train": 0.4668550998633547,
+        "cindex_val": 0.4213940433494464
+      },
+      "EpiClock_accel": {
+        "cindex_all": 0.35732316279322734,
+        "cindex_train": 0.3505821462665893,
+        "cindex_val": 0.397910494308436
+      }
+    },
+    "n_total": 3209,
+    "n_train": 2727,
+    "n_val": 482,
+    "cpg_coverage": {
+      "Horvath": 0.9348441926345609,
+      "Hannum": 0.8591549295774648,
+      "PhenoAge": 0.9922027290448343,
+      "DunedinPACE": 0.8901734104046243,
+      "GrimAge": 0.8084147257700977,
+      "EpiClock": 0.9721728833629366
+    },
+    "cohort": "FHS"
+  },
+  "WHI": {
+    "predictors": {
+      "AESurv_log_h": {
+        "cindex_all": 0.6440689102353513,
+        "cindex_train": null,
+        "cindex_val": null
+      },
+      "chronological_age": {
+        "cindex_all": 0.6936162104626867,
+        "cindex_train": null,
+        "cindex_val": null
+      },
+      "Horvath": {
+        "cindex_all": 0.6262762979802625,
+        "cindex_train": null,
+        "cindex_val": null
+      },
+      "Hannum": {
+        "cindex_all": 0.6527943862600034,
+        "cindex_train": null,
+        "cindex_val": null
+      },
+      "PhenoAge": {
+        "cindex_all": 0.6354354196507181,
+        "cindex_train": null,
+        "cindex_val": null
+      },
+      "DunedinPACE": {
+        "cindex_all": 0.5336863822126441,
+        "cindex_train": null,
+        "cindex_val": null
+      },
+      "GrimAge": {
+        "cindex_all": 0.7045953297678025,
+        "cindex_train": null,
+        "cindex_val": null
+      },
+      "EpiClock": {
+        "cindex_all": 0.6660008672912916,
+        "cindex_train": null,
+        "cindex_val": null
+      },
+      "Horvath_accel": {
+        "cindex_all": 0.42351410662426575,
+        "cindex_train": null,
+        "cindex_val": null
+      },
+      "Hannum_accel": {
+        "cindex_all": 0.458061209739944,
+        "cindex_train": null,
+        "cindex_val": null
+      },
+      "PhenoAge_accel": {
+        "cindex_all": 0.47674739484093087,
+        "cindex_train": null,
+        "cindex_val": null
+      },
+      "GrimAge_accel": {
+        "cindex_all": 0.47771981234970234,
+        "cindex_train": null,
+        "cindex_val": null
+      },
+      "EpiClock_accel": {
+        "cindex_all": 0.4330937331633793,
+        "cindex_train": null,
+        "cindex_val": null
+      }
+    },
+    "n_total": 510,
+    "n_train": null,
+    "n_val": null,
+    "cpg_coverage": {
+      "Horvath": 1.0,
+      "Hannum": 0.971830985915493,
+      "PhenoAge": 1.0,
+      "DunedinPACE": 0.9942196531791907,
+      "GrimAge": 0.9969947407963937,
+      "EpiClock": 0.992599171107164
+    },
+    "cohort": "WHI"
+  },
+  "reference_aesurv": {
+    "train_cindex_fhs": 0.8192744697976527,
+    "val_cindex_fhs": 0.777264930609699,
+    "test_cindex_whi": 0.6440689102353513
+  },
+  "epiclock_coef_path": "G:\\All_GEO_epiclock_datasets\\4k data training final\\6k probes.csv",
+  "epiclock_intercept": 32.14246737,
+  "note": "FHS: 15% validation split (seed=42). WHI: external cohort, full-sample C-index. EpiClock = intercept + sum(beta * coefficient) over 6k probes. GrimAge uses age + sex."
+}

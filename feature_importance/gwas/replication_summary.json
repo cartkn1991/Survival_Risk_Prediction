@@ -1,0 +1,8 @@
+{
+  "n_leads_tested": 12,
+  "n_replicated": 0,
+  "discovery_p": 1e-05,
+  "replication_p": 0.05,
+  "replicated_snps": [],
+  "top_replicated": []
+}

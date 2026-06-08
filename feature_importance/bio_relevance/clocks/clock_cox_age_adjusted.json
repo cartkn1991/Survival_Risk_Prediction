@@ -1,0 +1,510 @@
+{
+  "cohorts": {
+    "FHS_full": {
+      "models": {
+        "M0_age": {
+          "n": 3209,
+          "n_events": 575,
+          "formula": "age_z + sex",
+          "c_index": 0.8143641882773648,
+          "log_likelihood": -4104.147301140309,
+          "concordance_lifelines": 0.8143880896902927,
+          "coefficients": {
+            "age_z": {
+              "coef": 1.3939686218880203,
+              "hr_per_sd": 4.030815133521537,
+              "se": 0.056423192338875244,
+              "p_value": 9.311833883167851e-135
+            },
+            "sex": {
+              "coef": -0.41276297185066063,
+              "hr_per_sd": 0.6618191340025722,
+              "se": 0.08153756124852934,
+              "p_value": 4.143518010497026e-07
+            }
+          }
+        },
+        "M1_log_h": {
+          "n": 3209,
+          "n_events": 575,
+          "formula": "log_h_z + sex",
+          "c_index": 0.8140694737629299,
+          "log_likelihood": -4129.3633467735135,
+          "concordance_lifelines": 0.8140927517475578,
+          "coefficients": {
+            "log_h_z": {
+              "coef": 1.4705840974684161,
+              "hr_per_sd": 4.351776260356609,
+              "se": 0.06739063100659753,
+              "p_value": 1.4411169385457164e-105
+            },
+            "sex": {
+              "coef": -0.22641531675585458,
+              "hr_per_sd": 0.7973868647604837,
+              "se": 0.08149032320539053,
+              "p_value": 0.005462195486407322
+            }
+          }
+        },
+        "M2_GrimAge": {
+          "n": 3209,
+          "n_events": 575,
+          "formula": "GrimAge_z + sex",
+          "c_index": 0.8438488967751365,
+          "log_likelihood": -4019.6850941582493,
+          "concordance_lifelines": 0.8438651274201399,
+          "coefficients": {
+            "GrimAge_z": {
+              "coef": 1.535004950117819,
+              "hr_per_sd": 4.641348505119035,
+              "se": 0.055096610165226906,
+              "p_value": 8.09465039994552e-171
+            },
+            "sex": {
+              "coef": -0.16935446934097348,
+              "hr_per_sd": 0.8442096039209808,
+              "se": 0.08159062377915861,
+              "p_value": 0.0379253226304313
+            }
+          }
+        },
+        "M3_GrimAge_accel": {
+          "n": 3209,
+          "n_events": 575,
+          "formula": "GrimAge_accel_z + sex",
+          "c_index": 0.6349204406780813,
+          "log_likelihood": -4414.4314445097625,
+          "concordance_lifelines": 0.6349011280617947,
+          "coefficients": {
+            "GrimAge_accel_z": {
+              "coef": 0.42348968439030565,
+              "hr_per_sd": 1.5272819990367776,
+              "se": 0.03587003188153282,
+              "p_value": 3.6247113825639833e-32
+            },
+            "sex": {
+              "coef": -0.1894843640669894,
+              "hr_per_sd": 0.827385653742972,
+              "se": 0.08220046152156762,
+              "p_value": 0.021158194332299124
+            }
+          }
+        },
+        "M4_age_log_h": {
+          "n": 3209,
+          "n_events": 575,
+          "formula": "age_z + log_h_z + sex",
+          "c_index": 0.829155321687521,
+          "log_likelihood": -4049.332283039657,
+          "concordance_lifelines": 0.8291770776973293,
+          "coefficients": {
+            "age_z": {
+              "coef": 0.9077388274723232,
+              "hr_per_sd": 2.4787113977860358,
+              "se": 0.07337752575147372,
+              "p_value": 3.76048680725321e-35
+            },
+            "log_h_z": {
+              "coef": 0.8414330874763726,
+              "hr_per_sd": 2.319688913030285,
+              "se": 0.08396706200680118,
+              "p_value": 1.2326201750050822e-23
+            },
+            "sex": {
+              "coef": -0.3370338902538082,
+              "hr_per_sd": 0.713884645760915,
+              "se": 0.08189401203280772,
+              "p_value": 3.863597397055321e-05
+            }
+          }
+        },
+        "M5_age_GrimAge_accel": {
+          "n": 3209,
+          "n_events": 575,
+          "formula": "age_z + GrimAge_accel_z + sex",
+          "c_index": 0.8439223204603937,
+          "log_likelihood": -4016.575997400612,
+          "concordance_lifelines": 0.8439378573623093,
+          "coefficients": {
+            "age_z": {
+              "coef": 1.4888568632935684,
+              "hr_per_sd": 4.432026210254433,
+              "se": 0.05869377431352514,
+              "p_value": 5.9068795723794915e-142
+            },
+            "GrimAge_accel_z": {
+              "coef": 0.5121993454563268,
+              "hr_per_sd": 1.6689577761303114,
+              "se": 0.03606328781387106,
+              "p_value": 8.803493385074416e-46
+            },
+            "sex": {
+              "coef": -0.20479908138953656,
+              "hr_per_sd": 0.8148110106623058,
+              "se": 0.08286684238775736,
+              "p_value": 0.0134576251463321
+            }
+          }
+        },
+        "M6_age_GrimAge": {
+          "n": 3209,
+          "n_events": 575,
+          "formula": "age_z + GrimAge_z + sex",
+          "c_index": 0.8429161440327959,
+          "log_likelihood": -4002.5771334583196,
+          "concordance_lifelines": 0.8429325528345646,
+          "coefficients": {
+            "age_z": {
+              "coef": 0.4845199512247255,
+              "hr_per_sd": 1.6233955127334483,
+              "se": 0.083892127378686,
+              "p_value": 7.671963362912562e-09
+            },
+            "GrimAge_z": {
+              "coef": 1.2045971116567706,
+              "hr_per_sd": 3.3354150075040585,
+              "se": 0.08147159305145038,
+              "p_value": 1.8174028394941076e-49
+            },
+            "sex": {
+              "coef": -0.23685094240710058,
+              "hr_per_sd": 0.7891089019252254,
+              "se": 0.08243793696288156,
+              "p_value": 0.004064887570428925
+            }
+          }
+        }
+      },
+      "likelihood_ratio_tests": {
+        "M4_vs_M0_log_h_increment": {
+          "lr_stat": 109.63003620130348,
+          "p_value": 1.180974329820161e-25,
+          "df": 1
+        },
+        "M5_vs_M0_GrimAge_accel_increment": {
+          "lr_stat": 175.14260747939352,
+          "p_value": 5.57269075264667e-40,
+          "df": 1
+        },
+        "M6_vs_M0_GrimAge_increment": {
+          "lr_stat": 203.140335363978,
+          "p_value": 4.3108848083256175e-46,
+          "df": 1
+        },
+        "M4_vs_M1_age_adjusts_log_h": {
+          "lr_stat": 160.06212746771325,
+          "p_value": 1.096665671876975e-36,
+          "df": 1
+        },
+        "M5_vs_M3_age_adjusts_grim_accel": {
+          "lr_stat": 795.7108942183013,
+          "p_value": 4.6194795059461044e-175,
+          "df": 1
+        }
+      },
+      "interpretation": {
+        "M4_vs_M0": "Does log_h add mortality prediction beyond chronological age?",
+        "M5_vs_M0": "Does GrimAge acceleration add beyond age?",
+        "M6_vs_M0": "Does raw GrimAge add beyond age (partially collinear; GrimAge includes age at scoring)?"
+      }
+    },
+    "WHI": {
+      "models": {
+        "M0_age": {
+          "n": 510,
+          "n_events": 202,
+          "formula": "age_z",
+          "c_index": 0.6936162104626867,
+          "log_likelihood": -1134.231247920477,
+          "concordance_lifelines": 0.6936111220614709,
+          "coefficients": {
+            "age_z": {
+              "coef": 0.773974903348967,
+              "hr_per_sd": 2.1683682005277376,
+              "se": 0.08270028365760937,
+              "p_value": 8.065212014479723e-21
+            }
+          }
+        },
+        "M1_log_h": {
+          "n": 510,
+          "n_events": 202,
+          "formula": "log_h_z",
+          "c_index": 0.6440689102353513,
+          "log_likelihood": -1155.3561181510001,
+          "concordance_lifelines": 0.644065123979974,
+          "coefficients": {
+            "log_h_z": {
+              "coef": 0.5959098119310025,
+              "hr_per_sd": 1.814681212747984,
+              "se": 0.08468609380870577,
+              "p_value": 1.9685978132153738e-12
+            }
+          }
+        },
+        "M2_GrimAge": {
+          "n": 510,
+          "n_events": 202,
+          "formula": "GrimAge_z",
+          "c_index": 0.7045953297678025,
+          "log_likelihood": -1130.7755607126498,
+          "concordance_lifelines": 0.7046030932576445,
+          "coefficients": {
+            "GrimAge_z": {
+              "coef": 0.7694722010902376,
+              "hr_per_sd": 2.1586266322827745,
+              "se": 0.07687324556603307,
+              "p_value": 1.3827857418373823e-23
+            }
+          }
+        },
+        "M3_GrimAge_accel": {
+          "n": 510,
+          "n_events": 202,
+          "formula": "GrimAge_accel_z",
+          "c_index": 0.5980630494487444,
+          "log_likelihood": -1174.0094695470398,
+          "concordance_lifelines": 0.5980736126989132,
+          "coefficients": {
+            "GrimAge_accel_z": {
+              "coef": 0.29862229650254724,
+              "hr_per_sd": 1.3480003828488125,
+              "se": 0.0663050599455329,
+              "p_value": 6.676055802555086e-06
+            }
+          }
+        },
+        "M4_age_log_h": {
+          "n": 510,
+          "n_events": 202,
+          "formula": "age_z + log_h_z",
+          "c_index": 0.6943586643714109,
+          "log_likelihood": -1133.748380563819,
+          "concordance_lifelines": 0.6943535564578652,
+          "coefficients": {
+            "age_z": {
+              "coef": 0.7034262899037774,
+              "hr_per_sd": 2.020664241739356,
+              "se": 0.10950682718276557,
+              "p_value": 1.3310274473188056e-10
+            },
+            "log_h_z": {
+              "coef": 0.11089813814545721,
+              "hr_per_sd": 1.1172810927337464,
+              "se": 0.1132104990883094,
+              "p_value": 0.32729610961914846
+            }
+          }
+        },
+        "M5_age_GrimAge_accel": {
+          "n": 510,
+          "n_events": 202,
+          "formula": "age_z + GrimAge_accel_z",
+          "c_index": 0.7141355339754794,
+          "log_likelihood": -1122.5088393928643,
+          "concordance_lifelines": 0.7141299063087213,
+          "coefficients": {
+            "age_z": {
+              "coef": 0.7875380079994638,
+              "hr_per_sd": 2.197978354242223,
+              "se": 0.08261802186020718,
+              "p_value": 1.538680988102623e-21
+            },
+            "GrimAge_accel_z": {
+              "coef": 0.3539687741743997,
+              "hr_per_sd": 1.4247106980175104,
+              "se": 0.07188341007536185,
+              "p_value": 8.470323926160605e-07
+            }
+          }
+        },
+        "M6_age_GrimAge": {
+          "n": 510,
+          "n_events": 202,
+          "formula": "age_z + GrimAge_z",
+          "c_index": 0.7140435485354604,
+          "log_likelihood": -1121.708494623702,
+          "concordance_lifelines": 0.7140379232861592,
+          "coefficients": {
+            "age_z": {
+              "coef": 0.4337745179002652,
+              "hr_per_sd": 1.543070894021773,
+              "se": 0.10468798450325602,
+              "p_value": 3.420471504262593e-05
+            },
+            "GrimAge_z": {
+              "coef": 0.5114866996402848,
+              "hr_per_sd": 1.667768824055181,
+              "se": 0.10067921808151702,
+              "p_value": 3.7671974120173457e-07
+            }
+          }
+        }
+      },
+      "likelihood_ratio_tests": {
+        "M4_vs_M0_log_h_increment": {
+          "lr_stat": 0.9657347133161238,
+          "p_value": 0.32574623770259725,
+          "df": 1
+        },
+        "M5_vs_M0_GrimAge_accel_increment": {
+          "lr_stat": 23.444817055225485,
+          "p_value": 1.2854858271107044e-06,
+          "df": 1
+        },
+        "M6_vs_M0_GrimAge_increment": {
+          "lr_stat": 25.045506593549817,
+          "p_value": 5.599308727882967e-07,
+          "df": 1
+        },
+        "M4_vs_M1_age_adjusts_log_h": {
+          "lr_stat": 43.21547517436238,
+          "p_value": 4.9031344933310604e-11,
+          "df": 1
+        },
+        "M5_vs_M3_age_adjusts_grim_accel": {
+          "lr_stat": 103.001260308351,
+          "p_value": 3.349350918039218e-24,
+          "df": 1
+        }
+      },
+      "interpretation": {
+        "M4_vs_M0": "Does log_h add mortality prediction beyond chronological age?",
+        "M5_vs_M0": "Does GrimAge acceleration add beyond age?",
+        "M6_vs_M0": "Does raw GrimAge add beyond age (partially collinear; GrimAge includes age at scoring)?"
+      }
+    }
+  },
+  "methods": {
+    "version": "1.0",
+    "software": {
+      "python_packages": [
+        "numpy",
+        "pandas",
+        "pyarrow",
+        "scikit-learn",
+        "torch",
+        "lifelines"
+      ],
+      "c_index": "train_dann_survival.harrell_c_index (Harrell concordance, higher risk = shorter survival)",
+      "cox": "lifelines.CoxPHFitter (penalizer=0.01), Harrell C-index on partial hazard linear predictor",
+      "reference_implementation": "biolearn (bio-learn/biolearn) for Horvath transform and GrimAge V2 pipeline"
+    },
+    "data": {
+      "FHS": {
+        "methylation_snp_npz": "FHS_methylation_with_snp_1milfeatures_combined_training.npz",
+        "metadata_parquet": "FHS_methylation_with_snp_1milfeatures.parquet",
+        "methylation_matrix": "X_methylation (beta values 0-1 per CpG)"
+      },
+      "WHI": {
+        "methylation_snp_npz": "WHI_methylation_with_snp_merged_1milfeatures_combined_training.npz",
+        "metadata_parquet": "WHI_methylation_with_snp_merged_1milfeatures.parquet"
+      },
+      "aesurv_log_h": {
+        "bundle": "models/aesurv_final",
+        "projections": [
+          "vae_cox_cache/jl_proj/proj_FHS_b24e34c31a.npz",
+          "vae_cox_cache/jl_proj/proj_WHI_b159d5bf88.npz"
+        ],
+        "description": "Frozen DANN encoder + AESurv Cox head on JL-projected methylation+SNP features. Primary training target: survival (time, event). Auxiliary age loss during training (aux_age_weight) but chronological age is NOT an input at inference."
+      }
+    },
+    "clocks": {
+      "Horvath": {
+        "training_supervision": "chronological_age",
+        "coefficients": "D:\\SNP_datasets\\feature_importance\\annot\\clock_lists\\clock_horvath.csv",
+        "scoring": "linear_predictor = intercept + sum(beta_cpg * coef_cpg); age_years = anti_trafo(linear_predictor + 0.696)",
+        "anti_trafo": "if x<0: (1+20)*exp(x)-1 else (1+20)*x+20 (biolearn Horvathv1)",
+        "uses_age_at_scoring": false,
+        "uses_sex_at_scoring": false,
+        "omics_at_scoring": "methylation_only"
+      },
+      "Hannum": {
+        "training_supervision": "chronological_age",
+        "coefficients": "D:\\SNP_datasets\\feature_importance\\annot\\clock_lists\\clock_hannum.csv",
+        "scoring": "age_years = intercept + sum(beta_cpg * coef_cpg)",
+        "uses_age_at_scoring": false,
+        "uses_sex_at_scoring": false,
+        "omics_at_scoring": "methylation_only"
+      },
+      "PhenoAge": {
+        "training_supervision": "chronological_age (biolearn linear methylation age)",
+        "coefficients": "D:\\SNP_datasets\\feature_importance\\annot\\clock_lists\\clock_phenoage.csv",
+        "scoring": "age_years = intercept + sum(beta_cpg * coef_cpg)  [no Gompertz transform]",
+        "uses_age_at_scoring": false,
+        "uses_sex_at_scoring": false,
+        "omics_at_scoring": "methylation_only"
+      },
+      "DunedinPACE": {
+        "training_supervision": "pace_of_aging",
+        "coefficients": "D:\\SNP_datasets\\feature_importance\\annot\\clock_lists\\clock_dunedinpace.csv",
+        "scoring": "pace = intercept + sum(beta_cpg * coef_cpg); note: biolearn applies Gold-standard QN preprocess (not applied here)",
+        "uses_age_at_scoring": false,
+        "uses_sex_at_scoring": false,
+        "omics_at_scoring": "methylation_only"
+      },
+      "GrimAge": {
+        "training_supervision": "mortality_calibrated_age (Lu GrimAge V2)",
+        "coefficients": "D:\\SNP_datasets\\feature_importance\\annot\\clock_lists\\clock_grimagev2.csv",
+        "scoring": "Per-component linear DNAm scores + COX linear combination with Age and Female; DNAmGrimAge = ((COX - m_cox)/sd_cox)*sd_age + m_age (biolearn GrimageModel)",
+        "uses_age_at_scoring": true,
+        "uses_sex_at_scoring": true,
+        "omics_at_scoring": "methylation_plus_age_sex"
+      },
+      "EpiClock": {
+        "training_supervision": "chronological_age (same paradigm as Horvath elastic-net on methylation)",
+        "coefficients": "user 6k probes.csv",
+        "intercept": 32.14246737,
+        "scoring": "epiclock = intercept + sum(beta_cpg * coef_cpg)",
+        "uses_age_at_scoring": false,
+        "uses_sex_at_scoring": false,
+        "omics_at_scoring": "methylation_only"
+      },
+      "AESurv_log_h": {
+        "training_supervision": "survival (time-to-event, Cox negative log-likelihood)",
+        "scoring": "log_h from frozen multi-omic model (methylation + SNP, no age input at inference)",
+        "uses_age_at_scoring": false,
+        "uses_sex_at_scoring": false,
+        "omics_at_scoring": "methylation_and_SNP",
+        "auxiliary_training": "age reconstruction loss (not used at prediction)"
+      }
+    },
+    "derived_metrics": {
+      "age_acceleration": "clock_age - chronological_age (per clock)",
+      "GrimAge_accel": "GrimAge - chronological_age (approx.; biolearn uses regression residual)"
+    },
+    "cindex_evaluation": {
+      "metric": "Harrell concordance index",
+      "risk_direction": "higher score = higher mortality risk (shorter survival)",
+      "FHS": {
+        "split": "train_test_split test_size=0.15 stratified on event, random_state=42",
+        "reported": [
+          "cindex_all",
+          "cindex_train",
+          "cindex_val"
+        ],
+        "primary_comparison": "cindex_val"
+      },
+      "WHI": {
+        "split": "none (external full cohort)",
+        "reported": [
+          "cindex_all"
+        ],
+        "primary_comparison": "cindex_all"
+      }
+    },
+    "incremental_cox": {
+      "script": "bio_relevance/clock_mortality_age_adjusted_cox.py",
+      "models": {
+        "M0": "age (per SD)",
+        "M1": "log_h (per SD)",
+        "M2": "GrimAge (per SD)",
+        "M3": "GrimAge_accel (per SD)",
+        "M4": "age + log_h",
+        "M5": "age + GrimAge_accel",
+        "M6": "age + GrimAge"
+      },
+      "lrt": "likelihood ratio test nested models vs M0"
+    }
+  }
+}

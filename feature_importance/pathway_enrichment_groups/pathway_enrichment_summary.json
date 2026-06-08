@@ -1,0 +1,269 @@
+{
+  "gene_sets": [
+    "KEGG_2021_Human",
+    "GO_Biological_Process_2021"
+  ],
+  "annot_csv": "D:\\SNP_datasets\\Annotation.csv",
+  "snp_gene_csv": "D:\\SNP_datasets\\analysis_out\\gene_pathway_pipeline\\resources\\auto_snp_to_gene_ensembl.csv",
+  "groups": {
+    "significant_risk": {
+      "label": "significant_risk",
+      "cpg_score_col": "mean_grad",
+      "snp_score_col": "mean_grad",
+      "n_input_cpg": 2435,
+      "n_input_snp": 11939,
+      "modalities": {
+        "cpg": {
+          "KEGG": {
+            "skipped": false,
+            "n_genes": 2258,
+            "min_size_used": 10,
+            "n_terms": 153,
+            "results_csv": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\significant_risk\\cpg\\KEGG\\prerank_results.csv",
+            "dotplot_png": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\significant_risk\\cpg\\KEGG\\gsea_nes_dotplot.png",
+            "top_by_fdr": {
+              "Name": "prerank",
+              "Term": "Yersinia infection",
+              "ES": -0.5000261733530046,
+              "NES": -1.9943386178697151,
+              "NOM p-val": 0.002004008016032064,
+              "FDR q-val": 0.24750019378342766,
+              "FWER p-val": 0.23647294589178355,
+              "Tag %": "8/14",
+              "Gene %": "17.58%",
+              "Lead_genes": "BAIAP2;AKT1;MAPK9;TBK1;ARPC1B;ARPC1A;MAP2K6;MAP2K7"
+            }
+          },
+          "GO_BP": {
+            "skipped": false,
+            "n_genes": 2258,
+            "min_size_used": 10,
+            "n_terms": 559,
+            "results_csv": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\significant_risk\\cpg\\GO_BP\\prerank_results.csv",
+            "dotplot_png": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\significant_risk\\cpg\\GO_BP\\gsea_nes_dotplot.png",
+            "top_by_fdr": {
+              "Name": "prerank",
+              "Term": "regulation of tumor necrosis factor-mediated signaling pathway (GO:0010803)",
+              "ES": -0.47457100452786555,
+              "NES": -1.6816715436630347,
+              "NOM p-val": 0.029914529914529916,
+              "FDR q-val": 0.7821887873902919,
+              "FWER p-val": 0.9939879759519038,
+              "Tag %": "6/10",
+              "Gene %": "26.93%",
+              "Lead_genes": "FADD;PELI3;CYLD;RIPK1;SPPL2B;TNF"
+            }
+          }
+        },
+        "snp": {
+          "KEGG": {
+            "skipped": false,
+            "n_genes": 735,
+            "min_size_used": 10,
+            "n_terms": 17,
+            "results_csv": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\significant_risk\\snp\\KEGG\\prerank_results.csv",
+            "dotplot_png": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\significant_risk\\snp\\KEGG\\gsea_nes_dotplot.png",
+            "top_by_fdr": {
+              "Name": "prerank",
+              "Term": "PI3K-Akt signaling pathway",
+              "ES": 0.417167500799535,
+              "NES": 1.4150343766652573,
+              "NOM p-val": 0.1267605633802817,
+              "FDR q-val": 0.4913275517011341,
+              "FWER p-val": 0.4849699398797595,
+              "Tag %": "8/11",
+              "Gene %": "36.05%",
+              "Lead_genes": "MAGI2;GNG4;CREB1;GNG12;SYK;LPAR3;ITGA6;COL4A3"
+            }
+          },
+          "GO_BP": {
+            "skipped": false,
+            "n_genes": 735,
+            "min_size_used": 10,
+            "n_terms": 82,
+            "results_csv": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\significant_risk\\snp\\GO_BP\\prerank_results.csv",
+            "dotplot_png": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\significant_risk\\snp\\GO_BP\\gsea_nes_dotplot.png",
+            "top_by_fdr": {
+              "Name": "prerank",
+              "Term": "chemical synaptic transmission (GO:0007268)",
+              "ES": -0.607298918356174,
+              "NES": -2.2757679493095866,
+              "NOM p-val": 0.002004008016032064,
+              "FDR q-val": 0.009551725880628697,
+              "FWER p-val": 0.018036072144288578,
+              "Tag %": "9/14",
+              "Gene %": "16.73%",
+              "Lead_genes": "ERC2;DLGAP2;GRIK1;GRID2;GRIK2;CACNB2;GRIN2A;ERC1;GABRA6"
+            }
+          }
+        }
+      },
+      "n_genes_cpg": 2258,
+      "n_genes_snp": 735
+    },
+    "shap_full_risk": {
+      "label": "shap_full_risk",
+      "cpg_score_col": "mean",
+      "snp_score_col": "mean",
+      "n_input_cpg": 281,
+      "n_input_snp": 1316,
+      "modalities": {
+        "cpg": {
+          "KEGG": {
+            "skipped": false,
+            "n_genes": 261,
+            "min_size_used": 10,
+            "n_terms": 1,
+            "results_csv": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\shap_full_risk\\cpg\\KEGG\\prerank_results.csv",
+            "dotplot_png": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\shap_full_risk\\cpg\\KEGG\\gsea_nes_dotplot.png",
+            "top_by_fdr": {
+              "Name": "prerank",
+              "Term": "Pathways in cancer",
+              "ES": 0.4660415345288621,
+              "NES": 1.1789010768836419,
+              "NOM p-val": 0.23728813559322035,
+              "FDR q-val": 0.23728813559322035,
+              "FWER p-val": 0.11222444889779559,
+              "Tag %": "4/11",
+              "Gene %": "15.71%",
+              "Lead_genes": "CDK6;CCNA2;WNT7A;IL6R"
+            }
+          },
+          "GO_BP": {
+            "skipped": false,
+            "n_genes": 261,
+            "min_size_used": 10,
+            "n_terms": 19,
+            "results_csv": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\shap_full_risk\\cpg\\GO_BP\\prerank_results.csv",
+            "dotplot_png": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\shap_full_risk\\cpg\\GO_BP\\gsea_nes_dotplot.png",
+            "top_by_fdr": {
+              "Name": "prerank",
+              "Term": "regulation of apoptotic process (GO:0042981)",
+              "ES": -0.39204948077119744,
+              "NES": -1.071558192970595,
+              "NOM p-val": 0.36394557823129253,
+              "FDR q-val": 0.6725077881619939,
+              "FWER p-val": 0.9338677354709419,
+              "Tag %": "4/15",
+              "Gene %": "13.79%",
+              "Lead_genes": "CALR;OBSCN;UFM1;ZBTB7A"
+            }
+          }
+        },
+        "snp": {
+          "KEGG": {
+            "skipped": true,
+            "reason": "gseapy_no_pathways_after_filter",
+            "detail": "No gene sets passed through filtering condition !!! \nHint 1: Try to lower min_size or increase max_size !\nHint 2: Check gene symbols are identifiable to your gmt input.\nHint 3: Gene symbols curated in Enrichr web services are all upcases.\n",
+            "n_genes": 14,
+            "min_size_tried": 5
+          },
+          "GO_BP": {
+            "skipped": false,
+            "n_genes": 14,
+            "min_size_used": 2,
+            "n_terms": 4,
+            "results_csv": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\shap_full_risk\\snp\\GO_BP\\prerank_results.csv",
+            "dotplot_png": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\shap_full_risk\\snp\\GO_BP\\gsea_nes_dotplot.png",
+            "top_by_fdr": {
+              "Name": "prerank",
+              "Term": "negative regulation of transcription, DNA-templated (GO:0045892)",
+              "ES": -0.4911882009850318,
+              "NES": -0.7702060713756371,
+              "NOM p-val": 0.8165137614678899,
+              "FDR q-val": 0.8343483556638246,
+              "FWER p-val": 0.8875,
+              "Tag %": "1/2",
+              "Gene %": "14.29%",
+              "Lead_genes": "ZNF568"
+            }
+          }
+        }
+      },
+      "n_genes_cpg": 261,
+      "n_genes_snp": 14
+    },
+    "shap_intersect_significant_risk": {
+      "label": "shap_intersect_significant_risk",
+      "cpg_score_col": "mean",
+      "snp_score_col": "mean",
+      "n_input_cpg": 281,
+      "n_input_snp": 1316,
+      "modalities": {
+        "cpg": {
+          "KEGG": {
+            "skipped": false,
+            "n_genes": 261,
+            "min_size_used": 10,
+            "n_terms": 1,
+            "results_csv": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\shap_intersect_significant_risk\\cpg\\KEGG\\prerank_results.csv",
+            "dotplot_png": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\shap_intersect_significant_risk\\cpg\\KEGG\\gsea_nes_dotplot.png",
+            "top_by_fdr": {
+              "Name": "prerank",
+              "Term": "Pathways in cancer",
+              "ES": 0.4660415345288621,
+              "NES": 1.2136188066656164,
+              "NOM p-val": 0.2463768115942029,
+              "FDR q-val": 0.2463768115942029,
+              "FWER p-val": 0.10220440881763528,
+              "Tag %": "4/11",
+              "Gene %": "15.71%",
+              "Lead_genes": "CDK6;CCNA2;WNT7A;IL6R"
+            }
+          },
+          "GO_BP": {
+            "skipped": false,
+            "n_genes": 261,
+            "min_size_used": 10,
+            "n_terms": 19,
+            "results_csv": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\shap_intersect_significant_risk\\cpg\\GO_BP\\prerank_results.csv",
+            "dotplot_png": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\shap_intersect_significant_risk\\cpg\\GO_BP\\gsea_nes_dotplot.png",
+            "top_by_fdr": {
+              "Name": "prerank",
+              "Term": "regulation of apoptotic process (GO:0042981)",
+              "ES": -0.39204948077119744,
+              "NES": -1.0892360721021803,
+              "NOM p-val": 0.336734693877551,
+              "FDR q-val": 0.639818753467727,
+              "FWER p-val": 0.9218436873747495,
+              "Tag %": "4/15",
+              "Gene %": "13.79%",
+              "Lead_genes": "CALR;OBSCN;UFM1;ZBTB7A"
+            }
+          }
+        },
+        "snp": {
+          "KEGG": {
+            "skipped": true,
+            "reason": "gseapy_no_pathways_after_filter",
+            "detail": "No gene sets passed through filtering condition !!! \nHint 1: Try to lower min_size or increase max_size !\nHint 2: Check gene symbols are identifiable to your gmt input.\nHint 3: Gene symbols curated in Enrichr web services are all upcases.\n",
+            "n_genes": 14,
+            "min_size_tried": 5
+          },
+          "GO_BP": {
+            "skipped": false,
+            "n_genes": 14,
+            "min_size_used": 2,
+            "n_terms": 4,
+            "results_csv": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\shap_intersect_significant_risk\\snp\\GO_BP\\prerank_results.csv",
+            "dotplot_png": "D:\\SNP_datasets\\feature_importance\\pathway_enrichment_groups\\shap_intersect_significant_risk\\snp\\GO_BP\\gsea_nes_dotplot.png",
+            "top_by_fdr": {
+              "Name": "prerank",
+              "Term": "regulation of transcription by RNA polymerase II (GO:0006357)",
+              "ES": -0.4911882009850318,
+              "NES": -0.7708914658041431,
+              "NOM p-val": 0.8217821782178217,
+              "FDR q-val": 0.8284960422163589,
+              "FWER p-val": 0.8699551569506726,
+              "Tag %": "1/2",
+              "Gene %": "14.29%",
+              "Lead_genes": "ZNF568"
+            }
+          }
+        }
+      },
+      "n_genes_cpg": 261,
+      "n_genes_snp": 14
+    }
+  }
+}

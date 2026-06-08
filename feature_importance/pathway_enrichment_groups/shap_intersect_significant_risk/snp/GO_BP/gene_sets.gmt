@@ -1,0 +1,4 @@
+negative regulation of transcription by RNA polymerase II (GO:0000122)		TRPS1	ZNF568
+negative regulation of transcription, DNA-templated (GO:0045892)		TRPS1	ZNF568
+regulation of transcription by RNA polymerase II (GO:0006357)		ZNF568	TRPS1
+regulation of transcription, DNA-templated (GO:0006355)		ZNF568	TASP1	TRPS1

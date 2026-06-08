@@ -1,0 +1,30 @@
+{
+  "attempts": [
+    {
+      "cohort": "FHS",
+      "left_col": "primary_id",
+      "merge_rate": 0.9778747273293861
+    },
+    {
+      "cohort": "FHS",
+      "left_col": "id_Share_ID",
+      "merge_rate": 0.9778747273293861
+    },
+    {
+      "cohort": "FHS",
+      "left_col": "id_IID",
+      "merge_rate": 0.9778747273293861
+    }
+  ],
+  "final_merge_rate": {
+    "FHS": {
+      "key": "primary_id",
+      "rate": 0.9778747273293861,
+      "n": 3209
+    }
+  },
+  "overall_lifestyle_rate": 0.8437752083893519,
+  "n_total": 3719,
+  "n_fhs": 3209,
+  "n_whi": 510
+}

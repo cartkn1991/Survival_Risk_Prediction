@@ -1,0 +1,21 @@
+# Generated outputs and large artifacts
+runs/
+*.pt
+*.npz
+*.parquet
+*.pq
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+logs/
+vae_cox_cache/
+
+# Large EWAS/GWAS result tables (regenerate locally)
+**/mortality_fhs_ewas_results.csv
+**/discovery_fhs_ewas_results.csv

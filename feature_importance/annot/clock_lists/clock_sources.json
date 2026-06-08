@@ -1,0 +1,11 @@
+{
+  "Horvath": "cache:clock_horvath.csv",
+  "Horvath_SkinBlood": "cache:clock_horvath_skinblood.csv",
+  "Hannum": "cache:clock_hannum.csv",
+  "PhenoAge": "cache:clock_phenoage.csv",
+  "GrimAgeV2": "cache:clock_grimagev2.csv",
+  "DunedinPACE": "cache:clock_dunedinpace.csv",
+  "Zhang2019": "cache:clock_zhang2019.csv",
+  "Lin": "cache:clock_lin.csv",
+  "Weidner": "cache:clock_weidner.csv"
+}

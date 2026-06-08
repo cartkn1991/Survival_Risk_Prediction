@@ -1,0 +1,132 @@
+{
+  "version": "1.0",
+  "software": {
+    "python_packages": [
+      "numpy",
+      "pandas",
+      "pyarrow",
+      "scikit-learn",
+      "torch",
+      "lifelines"
+    ],
+    "c_index": "train_dann_survival.harrell_c_index (Harrell concordance, higher risk = shorter survival)",
+    "cox": "lifelines.CoxPHFitter (penalizer=0.01), Harrell C-index on partial hazard linear predictor",
+    "reference_implementation": "biolearn (bio-learn/biolearn) for Horvath transform and GrimAge V2 pipeline"
+  },
+  "data": {
+    "FHS": {
+      "methylation_snp_npz": "FHS_methylation_with_snp_1milfeatures_combined_training.npz",
+      "metadata_parquet": "FHS_methylation_with_snp_1milfeatures.parquet",
+      "methylation_matrix": "X_methylation (beta values 0-1 per CpG)"
+    },
+    "WHI": {
+      "methylation_snp_npz": "WHI_methylation_with_snp_merged_1milfeatures_combined_training.npz",
+      "metadata_parquet": "WHI_methylation_with_snp_merged_1milfeatures.parquet"
+    },
+    "aesurv_log_h": {
+      "bundle": "models/aesurv_final",
+      "projections": [
+        "vae_cox_cache/jl_proj/proj_FHS_b24e34c31a.npz",
+        "vae_cox_cache/jl_proj/proj_WHI_b159d5bf88.npz"
+      ],
+      "description": "Frozen DANN encoder + AESurv Cox head on JL-projected methylation+SNP features. Primary training target: survival (time, event). Auxiliary age loss during training (aux_age_weight) but chronological age is NOT an input at inference."
+    }
+  },
+  "clocks": {
+    "Horvath": {
+      "training_supervision": "chronological_age",
+      "coefficients": "D:\\SNP_datasets\\feature_importance\\annot\\clock_lists\\clock_horvath.csv",
+      "scoring": "linear_predictor = intercept + sum(beta_cpg * coef_cpg); age_years = anti_trafo(linear_predictor + 0.696)",
+      "anti_trafo": "if x<0: (1+20)*exp(x)-1 else (1+20)*x+20 (biolearn Horvathv1)",
+      "uses_age_at_scoring": false,
+      "uses_sex_at_scoring": false,
+      "omics_at_scoring": "methylation_only"
+    },
+    "Hannum": {
+      "training_supervision": "chronological_age",
+      "coefficients": "D:\\SNP_datasets\\feature_importance\\annot\\clock_lists\\clock_hannum.csv",
+      "scoring": "age_years = intercept + sum(beta_cpg * coef_cpg)",
+      "uses_age_at_scoring": false,
+      "uses_sex_at_scoring": false,
+      "omics_at_scoring": "methylation_only"
+    },
+    "PhenoAge": {
+      "training_supervision": "chronological_age (biolearn linear methylation age)",
+      "coefficients": "D:\\SNP_datasets\\feature_importance\\annot\\clock_lists\\clock_phenoage.csv",
+      "scoring": "age_years = intercept + sum(beta_cpg * coef_cpg)  [no Gompertz transform]",
+      "uses_age_at_scoring": false,
+      "uses_sex_at_scoring": false,
+      "omics_at_scoring": "methylation_only"
+    },
+    "DunedinPACE": {
+      "training_supervision": "pace_of_aging",
+      "coefficients": "D:\\SNP_datasets\\feature_importance\\annot\\clock_lists\\clock_dunedinpace.csv",
+      "scoring": "pace = intercept + sum(beta_cpg * coef_cpg); note: biolearn applies Gold-standard QN preprocess (not applied here)",
+      "uses_age_at_scoring": false,
+      "uses_sex_at_scoring": false,
+      "omics_at_scoring": "methylation_only"
+    },
+    "GrimAge": {
+      "training_supervision": "mortality_calibrated_age (Lu GrimAge V2)",
+      "coefficients": "D:\\SNP_datasets\\feature_importance\\annot\\clock_lists\\clock_grimagev2.csv",
+      "scoring": "Per-component linear DNAm scores + COX linear combination with Age and Female; DNAmGrimAge = ((COX - m_cox)/sd_cox)*sd_age + m_age (biolearn GrimageModel)",
+      "uses_age_at_scoring": true,
+      "uses_sex_at_scoring": true,
+      "omics_at_scoring": "methylation_plus_age_sex"
+    },
+    "EpiClock": {
+      "training_supervision": "chronological_age (same paradigm as Horvath elastic-net on methylation)",
+      "coefficients": "user 6k probes.csv",
+      "intercept": 32.14246737,
+      "scoring": "epiclock = intercept + sum(beta_cpg * coef_cpg)",
+      "uses_age_at_scoring": false,
+      "uses_sex_at_scoring": false,
+      "omics_at_scoring": "methylation_only"
+    },
+    "AESurv_log_h": {
+      "training_supervision": "survival (time-to-event, Cox negative log-likelihood)",
+      "scoring": "log_h from frozen multi-omic model (methylation + SNP, no age input at inference)",
+      "uses_age_at_scoring": false,
+      "uses_sex_at_scoring": false,
+      "omics_at_scoring": "methylation_and_SNP",
+      "auxiliary_training": "age reconstruction loss (not used at prediction)"
+    }
+  },
+  "derived_metrics": {
+    "age_acceleration": "clock_age - chronological_age (per clock)",
+    "GrimAge_accel": "GrimAge - chronological_age (approx.; biolearn uses regression residual)"
+  },
+  "cindex_evaluation": {
+    "metric": "Harrell concordance index",
+    "risk_direction": "higher score = higher mortality risk (shorter survival)",
+    "FHS": {
+      "split": "train_test_split test_size=0.15 stratified on event, random_state=42",
+      "reported": [
+        "cindex_all",
+        "cindex_train",
+        "cindex_val"
+      ],
+      "primary_comparison": "cindex_val"
+    },
+    "WHI": {
+      "split": "none (external full cohort)",
+      "reported": [
+        "cindex_all"
+      ],
+      "primary_comparison": "cindex_all"
+    }
+  },
+  "incremental_cox": {
+    "script": "bio_relevance/clock_mortality_age_adjusted_cox.py",
+    "models": {
+      "M0": "age (per SD)",
+      "M1": "log_h (per SD)",
+      "M2": "GrimAge (per SD)",
+      "M3": "GrimAge_accel (per SD)",
+      "M4": "age + log_h",
+      "M5": "age + GrimAge_accel",
+      "M6": "age + GrimAge"
+    },
+    "lrt": "likelihood ratio test nested models vs M0"
+  }
+}

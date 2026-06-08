@@ -1,0 +1,25 @@
+{
+  "model_role": "exploratory_whi_top1",
+  "selection_note": "Checkpoint from joint training WHI top-k (epoch 26). Copy weights to analysis dir as joint_model_epoch26.pt.",
+  "epoch": 26,
+  "source_run": "runs/aesurv_joint_dann_contrastive_best",
+  "source_checkpoint": "runs/aesurv_joint_dann_contrastive_best/joint_dann_aesurv_whi_top1_ep26.pt",
+  "weights_file": "joint_model_epoch26.pt",
+  "dann_encoder_ckpt": "runs/mini_vae_dann_mmd_rich/mini_dann_model.pt",
+  "dann_preprocess_npz": "runs/mini_vae_dann_mmd_rich/mini_dann_preprocess.npz",
+  "architecture_config": {
+    "variant": "JointDannAesurvContrastive",
+    "latent_dim": 128,
+    "n_cpg": 393234,
+    "n_snp": 979182,
+    "meth_as_mvalues": true,
+    "z_dim": 8,
+    "contrast_tau": 0.07,
+    "w_mmd": 10.0,
+    "w_dom": 1.2,
+    "lr_dann": 0.0001,
+    "lr_head": 0.0003
+  },
+  "whi_cindex_at_save": 0.6990367810352304,
+  "exploratory_flag": true
+}

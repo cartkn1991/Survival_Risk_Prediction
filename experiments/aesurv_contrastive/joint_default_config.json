@@ -1,0 +1,22 @@
+{
+  "dann_encoder_ckpt": "runs/mini_vae_dann_mmd_rich/mini_dann_model.pt",
+  "dann_preprocess_npz": "runs/mini_vae_dann_mmd_rich/mini_dann_preprocess.npz",
+  "init_head": "runs/aesurv_contrastive_best/aesurv_aux_contrastive_model.pt",
+  "aux_age_weight": 12,
+  "aux_cell_weight": 0.5,
+  "aux_contrast_weight": 1.0,
+  "contrast_tau": 0.07,
+  "contrast_warmup_epochs": 10,
+  "contrast_proj_dim": 64,
+  "w_recon": 0.5,
+  "w_dom": 0.6,
+  "w_mmd": 5.0,
+  "w_mmd_batch": 2.0,
+  "w_batch_adv": 1.0,
+  "domain_loss_scale": 0.6,
+  "lr_dann": 0.0001,
+  "lr_head": 0.0003,
+  "epochs": 80,
+  "patience": 25,
+  "balance_events": true
+}

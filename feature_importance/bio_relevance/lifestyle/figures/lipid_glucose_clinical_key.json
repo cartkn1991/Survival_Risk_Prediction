@@ -1,0 +1,126 @@
+{
+  "note": "All thresholds in mg/dL unless noted. low/medium/high map to clinical categories.",
+  "traits": {
+    "glucose": {
+      "low": "Normal: <100 mg/dL (fasting)",
+      "medium": "Prediabetic / impaired fasting: 100\u2013125 mg/dL",
+      "high": "Diabetic range: \u2265126 mg/dL",
+      "unit": "mg/dL"
+    },
+    "triglycerides": {
+      "low": "Normal: <150 mg/dL",
+      "medium": "Borderline high: 150\u2013199 mg/dL",
+      "high": "High: \u2265200 mg/dL",
+      "unit": "mg/dL"
+    },
+    "hdl": {
+      "low": "Low HDL (unfavourable): <40 mg/dL",
+      "medium": "Intermediate: 40\u201359 mg/dL",
+      "high": "High HDL (protective): \u226560 mg/dL",
+      "unit": "mg/dL"
+    },
+    "total_cholesterol": {
+      "low": "Desirable: <200 mg/dL",
+      "medium": "Borderline high: 200\u2013239 mg/dL",
+      "high": "High: \u2265240 mg/dL",
+      "unit": "mg/dL"
+    },
+    "ldl": {
+      "low": "Optimal: <100 mg/dL",
+      "medium": "Near optimal / borderline: 100\u2013129 mg/dL",
+      "high": "High: \u2265130 mg/dL",
+      "unit": "mg/dL"
+    }
+  },
+  "per_trait_results": {
+    "hdl": {
+      "n": 3138,
+      "categories": {
+        "kind": "clinical",
+        "unit": "mg/dL",
+        "low_cut_hi": 40.0,
+        "high_cut_lo": 60.0,
+        "low": "Low HDL (unfavourable): <40 mg/dL",
+        "medium": "Intermediate: 40\u201359 mg/dL",
+        "high": "High HDL (protective): \u226560 mg/dL"
+      },
+      "n_low": 583,
+      "events_low": 136,
+      "n_medium": 1513,
+      "events_medium": 277,
+      "n_high": 1042,
+      "events_high": 146,
+      "logrank_p": 8.696868106451129e-06,
+      "mean_logh_low": -0.20612170952364264,
+      "mean_logh_medium": -0.3365576923021558,
+      "mean_logh_high": -0.35881879597530486
+    },
+    "total_cholesterol": {
+      "n": 3138,
+      "categories": {
+        "kind": "clinical",
+        "unit": "mg/dL",
+        "low_cut_hi": 200.0,
+        "high_cut_lo": 240.0,
+        "low": "Desirable: <200 mg/dL",
+        "medium": "Borderline high: 200\u2013239 mg/dL",
+        "high": "High: \u2265240 mg/dL"
+      },
+      "n_low": 1823,
+      "events_low": 316,
+      "n_medium": 976,
+      "events_medium": 173,
+      "n_high": 339,
+      "events_high": 70,
+      "logrank_p": 0.6747457884656078,
+      "mean_logh_low": -0.4160172380527427,
+      "mean_logh_medium": -0.22935432112455123,
+      "mean_logh_high": -0.06200792956932456
+    },
+    "triglycerides": {
+      "n": 3138,
+      "categories": {
+        "kind": "clinical",
+        "unit": "mg/dL",
+        "low_cut_hi": 150.0,
+        "high_cut_lo": 200.0,
+        "low": "Normal: <150 mg/dL",
+        "medium": "Borderline high: 150\u2013199 mg/dL",
+        "high": "High: \u2265200 mg/dL"
+      },
+      "n_low": 2324,
+      "events_low": 373,
+      "n_medium": 411,
+      "events_medium": 96,
+      "n_high": 403,
+      "events_high": 90,
+      "logrank_p": 0.0004811110056414804,
+      "mean_logh_low": -0.39741052070026656,
+      "mean_logh_medium": -0.12534559086654018,
+      "mean_logh_high": -0.06990283513187474
+    },
+    "glucose": {
+      "n": 3138,
+      "categories": {
+        "kind": "clinical",
+        "unit": "mg/dL",
+        "low_cut_hi": 100.0,
+        "high_cut_lo": 126.0,
+        "low": "Normal: <100 mg/dL (fasting)",
+        "medium": "Prediabetic / impaired fasting: 100\u2013125 mg/dL",
+        "high": "Diabetic range: \u2265126 mg/dL"
+      },
+      "n_low": 2068,
+      "events_low": 259,
+      "n_medium": 901,
+      "events_medium": 226,
+      "n_high": 169,
+      "events_high": 74,
+      "logrank_p": 1.8857691174597553e-30,
+      "mean_logh_low": -0.4705380519826823,
+      "mean_logh_medium": -0.07023013886746503,
+      "mean_logh_high": 0.19574033200035434
+    }
+  },
+  "generated_utc": "2026-05-27T06:50:16.225284+00:00"
+}

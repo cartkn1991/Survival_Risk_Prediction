@@ -1,0 +1,102 @@
+{
+  "age": {
+    "cpg": {
+      "consistency": {
+        "pearson_r": 0.8566188812255859,
+        "pearson_p": 0.0,
+        "spearman_r": 0.8373917528294946,
+        "sign_agreement": 0.8276369795083843,
+        "slope": 0.35374068165514205,
+        "intercept": 2.2118625809238832e-05
+      },
+      "classes": {
+        "thresholds_95pct": {
+          "fhs": 0.016454211808741088,
+          "whi": 0.0067955764243379235
+        },
+        "class_counts": {
+          "weak": 297096,
+          "noise": 67724,
+          "robust": 10910,
+          "fhs-specific": 8726,
+          "whi-specific": 8723,
+          "discordant": 55
+        }
+      }
+    },
+    "snp": {
+      "consistency": {
+        "pearson_r": 0.8552439212799072,
+        "pearson_p": 0.0,
+        "spearman_r": 0.832421130913287,
+        "sign_agreement": 0.8265909708307546,
+        "slope": 0.35285608808593294,
+        "intercept": -5.049779860109291e-06
+      },
+      "classes": {
+        "thresholds_95pct": {
+          "fhs": 0.016206417232751846,
+          "whi": 0.006700769579038018
+        },
+        "class_counts": {
+          "weak": 742120,
+          "noise": 169029,
+          "robust": 29887,
+          "fhs-specific": 18698,
+          "whi-specific": 18678,
+          "discordant": 770
+        }
+      }
+    }
+  },
+  "risk": {
+    "cpg": {
+      "consistency": {
+        "pearson_r": 0.8658990859985352,
+        "pearson_p": 0.0,
+        "spearman_r": 0.8476126815666034,
+        "sign_agreement": 0.8340224904255481,
+        "slope": 0.3635822793881183,
+        "intercept": 1.7285412246690068e-06
+      },
+      "classes": {
+        "thresholds_95pct": {
+          "fhs": 0.0014085094211623071,
+          "whi": 0.000592059493646957
+        },
+        "class_counts": {
+          "weak": 299813,
+          "noise": 65228,
+          "robust": 11131,
+          "fhs-specific": 8512,
+          "whi-specific": 8510,
+          "discordant": 40
+        }
+      }
+    },
+    "snp": {
+      "consistency": {
+        "pearson_r": 0.8647888898849487,
+        "pearson_p": 0.0,
+        "spearman_r": 0.8430479536412122,
+        "sign_agreement": 0.8325867918323662,
+        "slope": 0.3627437898099156,
+        "intercept": -3.7515870156010496e-07
+      },
+      "classes": {
+        "thresholds_95pct": {
+          "fhs": 0.0013898224686272435,
+          "whi": 0.00058332453481853
+        },
+        "class_counts": {
+          "weak": 748400,
+          "noise": 163297,
+          "robust": 30435,
+          "fhs-specific": 18217,
+          "whi-specific": 18202,
+          "discordant": 631
+        }
+      }
+    }
+  }
+}

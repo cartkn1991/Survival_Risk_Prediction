@@ -1,0 +1,193 @@
+{
+  "n_total": 3138,
+  "fhs_only": true,
+  "n_with_lifestyle": 3138,
+  "has_lifestyle_data": "True",
+  "concordance": {
+    "traits": {
+      "smoking_ord": {
+        "n": 3138,
+        "spearman_r": -0.03518879505860252,
+        "spearman_p": 0.04872092143214288,
+        "partial_r": 0.014588094611546991,
+        "partial_p": 0.41397892446124623,
+        "partial_q_bh": 0.48297541187145393
+      },
+      "cigarettes_per_day": {
+        "n": 3138,
+        "spearman_r": -0.030794398256670824,
+        "spearman_p": 0.08457112042688517,
+        "partial_r": 0.01587078932196661,
+        "partial_p": 0.3741378164425741,
+        "partial_q_bh": 0.48297541187145393
+      },
+      "alcohol_drinks_per_week": {
+        "n": 3138,
+        "spearman_r": -0.45617995849504767,
+        "spearman_p": 4.064630039566974e-161,
+        "partial_r": 0.02318048364384856,
+        "partial_p": 0.1942261675544777,
+        "partial_q_bh": 0.34059605824576716
+      },
+      "alcohol_amount_per_occasion": {
+        "n": 3138,
+        "spearman_r": -0.45620253015165874,
+        "spearman_p": 3.902025528604475e-161,
+        "partial_r": 0.023159706833812375,
+        "partial_p": 0.19462631899758123,
+        "partial_q_bh": 0.34059605824576716
+      },
+      "sleep_hours": {
+        "n": 3138,
+        "spearman_r": 0.07288890517605108,
+        "spearman_p": 4.371941137599951e-05,
+        "partial_r": 0.04029454732864998,
+        "partial_p": 0.023993615042418644,
+        "partial_q_bh": 0.1679553052969305
+      },
+      "sleep_category_ord": {
+        "n": 3138,
+        "spearman_r": 0.0659673823848522,
+        "spearman_p": 0.00021738433188637536,
+        "partial_r": 0.0013960662898423303,
+        "partial_p": 0.9376900270073354,
+        "partial_q_bh": 0.9376900270073355
+      },
+      "unhealthy_lifestyle_score": {
+        "n": 3138,
+        "spearman_r": -0.28649366808306775,
+        "spearman_p": 2.3662900531315284e-60,
+        "partial_r": 0.026379959263620512,
+        "partial_p": 0.13956387875307907,
+        "partial_q_bh": 0.34059605824576716
+      }
+    },
+    "by_cohort": {
+      "FHS": {
+        "smoking_ord": {
+          "spearman_r": -0.03518879505860252,
+          "partial_r": 0.014588094611546991,
+          "partial_p": 0.41397892446124623,
+          "n": 3138
+        },
+        "cigarettes_per_day": {
+          "spearman_r": -0.030794398256670824,
+          "partial_r": 0.01587078932196661,
+          "partial_p": 0.3741378164425741,
+          "n": 3138
+        },
+        "alcohol_drinks_per_week": {
+          "spearman_r": -0.45617995849504767,
+          "partial_r": 0.02318048364384856,
+          "partial_p": 0.1942261675544777,
+          "n": 3138
+        },
+        "alcohol_amount_per_occasion": {
+          "spearman_r": -0.45620253015165874,
+          "partial_r": 0.023159706833812375,
+          "partial_p": 0.19462631899758123,
+          "n": 3138
+        },
+        "sleep_hours": {
+          "spearman_r": 0.07288890517605108,
+          "partial_r": 0.04029454732864998,
+          "partial_p": 0.023993615042418644,
+          "n": 3138
+        },
+        "sleep_category_ord": {
+          "spearman_r": 0.0659673823848522,
+          "partial_r": 0.0013960662898423303,
+          "partial_p": 0.9376900270073354,
+          "n": 3138
+        },
+        "unhealthy_lifestyle_score": {
+          "spearman_r": -0.28649366808306775,
+          "partial_r": 0.026379959263620512,
+          "partial_p": 0.13956387875307907,
+          "n": 3138
+        }
+      }
+    }
+  },
+  "cox_models": {
+    "lifestyle_terms": [
+      "cigarettes_per_day",
+      "alcohol_amount_per_occasion",
+      "sleep_hours",
+      "smoking_ord"
+    ],
+    "cohorts": {
+      "FHS": {
+        "M0": {
+          "c_index": 0.8149058069875782,
+          "n": 3138,
+          "formula": "age + sex + batch_code"
+        },
+        "M1": {
+          "c_index": 0.827030762675146,
+          "n": 3138,
+          "formula": "age + sex + batch_code + cigarettes_per_day + alcohol_amount_per_occasion + sleep_hours + smoking_ord"
+        },
+        "M2": {
+          "c_index": 0.8286206390300322,
+          "n": 3138,
+          "formula": "age + sex + batch_code + log_h"
+        },
+        "M3": {
+          "c_index": 0.8386203883738501,
+          "n": 3138,
+          "formula": "age + sex + batch_code + cigarettes_per_day + alcohol_amount_per_occasion + sleep_hours + smoking_ord + log_h"
+        },
+        "lrt": {
+          "M3_vs_M2": {
+            "stat": 902.3557652089548,
+            "p": 1.7527432642540212e-189
+          },
+          "M3_vs_M1": {
+            "stat": 902.3557652089548,
+            "p": 1.7527432642540212e-189
+          }
+        }
+      }
+    }
+  },
+  "never_smokers": {
+    "n": 2761,
+    "c_index_log_h": 0.8323834990614771,
+    "spearman_alcohol": -0.4660487483494713,
+    "cox_hr_log_h": 2.8153381085481572,
+    "cox_p_log_h": 4.550210630275638e-22
+  },
+  "noise_check": {
+    "r_logh_vs_noise": 0.028337163085904442,
+    "max_abs_r_logh_lifestyle": 0.42851580264773304
+  },
+  "residual_risk": {
+    "n_used": 3138,
+    "coef_labels": [
+      "intercept",
+      "age",
+      "sex",
+      "JHU",
+      "UMN",
+      "smoking_ord",
+      "alcohol_drinks_per_week",
+      "sleep_hours"
+    ],
+    "km": {
+      "FHS": {
+        "cut_lo": -0.1828961612472332,
+        "cut_hi": 0.1981715283982192,
+        "n_low": 1046,
+        "n_high": 1046
+      }
+    },
+    "cox": {
+      "FHS": {
+        "hr_per_sd": 2.3930756571742444,
+        "p": 2.2175694164151983e-15,
+        "c_index_resid_only": 0.6136872598624256
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "sig_csv": "D:\\SNP_datasets\\feature_importance\\significance\\significant_either.csv",
+  "shap_cpg_csv": "D:\\SNP_datasets\\feature_importance\\shap\\shap_top_cpg_risk.csv",
+  "shap_snp_csv": "D:\\SNP_datasets\\feature_importance\\shap\\shap_top_snp_risk.csv",
+  "target": "risk",
+  "n_sig_cpg": 2806,
+  "n_sig_snp": 13151,
+  "n_shap_cpg": 281,
+  "n_shap_snp": 1316,
+  "n_common_cpg": 281,
+  "n_common_snp": 1316,
+  "venn": {
+    "cpg": {
+      "only_significance": 2525,
+      "only_shap": 0,
+      "intersection": 281
+    },
+    "snp": {
+      "only_significance": 11835,
+      "only_shap": 0,
+      "intersection": 1316
+    }
+  },
+  "outputs": {
+    "cpg": "D:\\SNP_datasets\\feature_importance\\shap\\common_significant_shap_cpg_risk.csv",
+    "snp": "D:\\SNP_datasets\\feature_importance\\shap\\common_significant_shap_snp_risk.csv",
+    "venn_png": "D:\\SNP_datasets\\feature_importance\\shap\\common_significant_shap_venn_risk.png"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "model": "joint_dann_aesurv epoch 26 (WHI top-1 exploratory checkpoint)",
+  "weights_file": "joint_model_epoch26.pt",
+  "epoch": 26,
+  "split_rule": "FHS train/val: val_frac=0.15, seed=42, stratified by event",
+  "c_index": {
+    "fhs_train": 0.8623,
+    "fhs_validation": 0.8318,
+    "whi_external_test": 0.6990
+  },
+  "from_training_log_epoch26": {
+    "val_cindex": 0.8318103851551536,
+    "test_whi_cindex": 0.6990367810352304,
+    "train_cox_loss": 3.246430532286182
+  },
+  "note": "Training log did not log FHS train C-index each epoch; fhs_train from post-hoc eval in cindex_eval.json."
+}

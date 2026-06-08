@@ -1,0 +1,5 @@
+{
+  "r_logh_vs_gaussian_noise": 0.00458897421423627,
+  "r_logh_vs_age_pred": 0.9942276477813721,
+  "interpretation": "If biology drives risk, |r|(log_h, age_pred) should exceed spurious |r| vs noise."
+}

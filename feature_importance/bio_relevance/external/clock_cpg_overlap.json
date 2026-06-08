@@ -1,0 +1,18 @@
+{
+  "zhang2019": {
+    "n_shap_top": 200,
+    "n_clock": 514,
+    "overlap": 0,
+    "odds_ratio": 0.0,
+    "p_fisher_greater": 1.0,
+    "note": "2x2 contingency on EPIC manifest CpGs as universe"
+  },
+  "grimagev2": {
+    "n_shap_top": 200,
+    "n_clock": 1030,
+    "overlap": 0,
+    "odds_ratio": 0.0,
+    "p_fisher_greater": 1.0,
+    "note": "2x2 contingency on EPIC manifest CpGs as universe"
+  }
+}

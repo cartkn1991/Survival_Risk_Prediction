@@ -1,0 +1,8 @@
+{
+  "n_fhs_used": 3209,
+  "n_batches": 3,
+  "eta_sq_batch_on_age_adjusted_logh": 0.06112364585604484,
+  "f_oneway": 104.3600724150485,
+  "p_oneway": 1.2338643054431602e-44,
+  "note": "log_h residualised on linear age within FHS; eta^2 is fraction of residual variance between batches."
+}

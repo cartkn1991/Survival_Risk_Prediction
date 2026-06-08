@@ -1,0 +1,69 @@
+{
+  "annot_csv": "D:\\SNP_datasets\\Annotation.csv",
+  "snp_gene_csv": "D:\\SNP_datasets\\analysis_out\\gene_pathway_pipeline\\resources\\auto_snp_to_gene_ensembl.csv",
+  "blocks": {
+    "significant_risk": {
+      "n_unique_genes_cpg": 2258,
+      "n_unique_genes_snp": 735,
+      "n_shared_genes_cpg_snp": 83,
+      "n_union_genes": 2910,
+      "n_only_cpg_genes": 2175,
+      "n_only_snp_genes": 652,
+      "files": {
+        "genes_from_cpg": "D:\\SNP_datasets\\feature_importance\\gene_overlap_from_features\\significant_risk\\genes_from_cpg.txt",
+        "genes_from_snp": "D:\\SNP_datasets\\feature_importance\\gene_overlap_from_features\\significant_risk\\genes_from_snp.txt",
+        "genes_shared_cpg_snp": "D:\\SNP_datasets\\feature_importance\\gene_overlap_from_features\\significant_risk\\genes_shared_cpg_snp.txt",
+        "genes_only_cpg": "D:\\SNP_datasets\\feature_importance\\gene_overlap_from_features\\significant_risk\\genes_only_cpg.txt",
+        "genes_only_snp": "D:\\SNP_datasets\\feature_importance\\gene_overlap_from_features\\significant_risk\\genes_only_snp.txt"
+      },
+      "label": "significant_risk",
+      "source": "D:\\SNP_datasets\\feature_importance\\significance\\significant_risk.csv",
+      "n_features_cpg": 2435,
+      "n_features_snp": 11939,
+      "n_cpg_with_gene_annotation": 2111,
+      "n_snp_with_gene_annotation": 904
+    },
+    "shap_full_risk": {
+      "n_unique_genes_cpg": 261,
+      "n_unique_genes_snp": 14,
+      "n_shared_genes_cpg_snp": 0,
+      "n_union_genes": 275,
+      "n_only_cpg_genes": 261,
+      "n_only_snp_genes": 14,
+      "files": {
+        "genes_from_cpg": "D:\\SNP_datasets\\feature_importance\\gene_overlap_from_features\\shap_full_risk\\genes_from_cpg.txt",
+        "genes_from_snp": "D:\\SNP_datasets\\feature_importance\\gene_overlap_from_features\\shap_full_risk\\genes_from_snp.txt",
+        "genes_shared_cpg_snp": "D:\\SNP_datasets\\feature_importance\\gene_overlap_from_features\\shap_full_risk\\genes_shared_cpg_snp.txt",
+        "genes_only_cpg": "D:\\SNP_datasets\\feature_importance\\gene_overlap_from_features\\shap_full_risk\\genes_only_cpg.txt",
+        "genes_only_snp": "D:\\SNP_datasets\\feature_importance\\gene_overlap_from_features\\shap_full_risk\\genes_only_snp.txt"
+      },
+      "label": "shap_full_risk",
+      "source": "shap_top_cpg_risk.csv + shap_top_snp_risk.csv",
+      "n_features_cpg": 281,
+      "n_features_snp": 1316,
+      "n_cpg_with_gene_annotation": 228,
+      "n_snp_with_gene_annotation": 14
+    },
+    "shap_intersect_significant_risk": {
+      "n_unique_genes_cpg": 261,
+      "n_unique_genes_snp": 14,
+      "n_shared_genes_cpg_snp": 0,
+      "n_union_genes": 275,
+      "n_only_cpg_genes": 261,
+      "n_only_snp_genes": 14,
+      "files": {
+        "genes_from_cpg": "D:\\SNP_datasets\\feature_importance\\gene_overlap_from_features\\shap_intersect_significant_risk\\genes_from_cpg.txt",
+        "genes_from_snp": "D:\\SNP_datasets\\feature_importance\\gene_overlap_from_features\\shap_intersect_significant_risk\\genes_from_snp.txt",
+        "genes_shared_cpg_snp": "D:\\SNP_datasets\\feature_importance\\gene_overlap_from_features\\shap_intersect_significant_risk\\genes_shared_cpg_snp.txt",
+        "genes_only_cpg": "D:\\SNP_datasets\\feature_importance\\gene_overlap_from_features\\shap_intersect_significant_risk\\genes_only_cpg.txt",
+        "genes_only_snp": "D:\\SNP_datasets\\feature_importance\\gene_overlap_from_features\\shap_intersect_significant_risk\\genes_only_snp.txt"
+      },
+      "label": "shap_intersect_significant_risk",
+      "source": "common_significant_shap_cpg_risk.csv + common_significant_shap_snp_risk.csv",
+      "n_features_cpg": 281,
+      "n_features_snp": 1316,
+      "n_cpg_with_gene_annotation": 228,
+      "n_snp_with_gene_annotation": 14
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "gradient_risk": {
+    "cpg_pearson_abs": 0.7555848360526561,
+    "cpg_spearman_abs": 0.661516603636874,
+    "snp_pearson_abs": 0.7778744497420639,
+    "snp_spearman_abs": 0.6493198645057288
+  },
+  "shap_risk_cohort": {
+    "n_features": 15957,
+    "pearson_mean_abs_fhs_vs_whi": 0.6371106183800115,
+    "spearman_mean_abs_fhs_vs_whi": 0.6774095197453495
+  }
+}

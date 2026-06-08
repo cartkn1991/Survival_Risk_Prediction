@@ -1,0 +1,14 @@
+{
+  "method": "forward_with_binary_refinement",
+  "cindex_baseline_full_val": 0.777264930609699,
+  "cindex_tol": 0.005,
+  "n_significant_pool": 13687,
+  "n_minimal_sig_active": 13450,
+  "n_coarse_bracket_lo": 13000,
+  "n_coarse_bracket_hi": 13500,
+  "minimal_cindex_val": 0.7743957586153126,
+  "minimal_cindex_whi": 0.6391805411372029,
+  "n_refinement_steps": 9,
+  "n_coarse_steps": 27,
+  "runtime_sec": 579.7093019485474
+}

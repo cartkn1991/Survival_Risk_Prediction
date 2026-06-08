@@ -1,0 +1,118 @@
+{
+  "group_definition": {
+    "intercept": -3.5081755116171087,
+    "age": 0.0544550440920971,
+    "cohort": 0.02721701370381408,
+    "mode": "residual",
+    "residual_q_lo": 0.1,
+    "residual_q_hi": 0.9,
+    "resid_lo": -0.6104380488395691,
+    "resid_hi": 0.5924243927001953
+  },
+  "n_fhs_resilient": 372,
+  "n_fhs_accelerated": 372,
+  "n_snps": 10,
+  "n_expected_direction": 10,
+  "rows": [
+    {
+      "snp": "2:172326907_A",
+      "beta_fhs": -0.0601166615940792,
+      "mean_dose_resilient": 0.904891312122345,
+      "mean_dose_middle": 0.771589994430542,
+      "mean_dose_accelerated": 0.7410468459129333,
+      "trend_r": -0.0569533056475654,
+      "trend_p": 0.0012480902113597774,
+      "expected_direction_in_tails": true
+    },
+    {
+      "snp": "11:127103604_C",
+      "beta_fhs": 0.0682037344846875,
+      "mean_dose_resilient": 0.39945653080940247,
+      "mean_dose_middle": 0.5149313807487488,
+      "mean_dose_accelerated": 0.5426997542381287,
+      "trend_r": 0.05783815145890468,
+      "trend_p": 0.0010458788696454462,
+      "expected_direction_in_tails": true
+    },
+    {
+      "snp": "14:52463525_A",
+      "beta_fhs": -0.0549618082177748,
+      "mean_dose_resilient": 1.01902174949646,
+      "mean_dose_middle": 0.9701371788978577,
+      "mean_dose_accelerated": 0.8512396812438965,
+      "trend_r": -0.055175234689324684,
+      "trend_p": 0.0017676047820598124,
+      "expected_direction_in_tails": true
+    },
+    {
+      "snp": "2:177520106_C",
+      "beta_fhs": -0.2599022781454076,
+      "mean_dose_resilient": 0.0625,
+      "mean_dose_middle": 0.02259887009859085,
+      "mean_dose_accelerated": 0.002754820976406336,
+      "trend_r": -0.09160849134981087,
+      "trend_p": 2.0106233504030135e-07,
+      "expected_direction_in_tails": true
+    },
+    {
+      "snp": "12:95105766_G",
+      "beta_fhs": -0.0780377276438232,
+      "mean_dose_resilient": 0.40760868787765503,
+      "mean_dose_middle": 0.33171913027763367,
+      "mean_dose_accelerated": 0.26446279883384705,
+      "trend_r": -0.06560629969858525,
+      "trend_p": 0.00019999160445336613,
+      "expected_direction_in_tails": true
+    },
+    {
+      "snp": "10:71827020_A",
+      "beta_fhs": -0.184846665958556,
+      "mean_dose_resilient": 0.08152174204587936,
+      "mean_dose_middle": 0.05044390633702278,
+      "mean_dose_accelerated": 0.022038567811250687,
+      "trend_r": -0.06466207716801775,
+      "trend_p": 0.0002469631130371619,
+      "expected_direction_in_tails": true
+    },
+    {
+      "snp": "1:86471719_C",
+      "beta_fhs": -0.213236191152556,
+      "mean_dose_resilient": 0.0679347813129425,
+      "mean_dose_middle": 0.03833736851811409,
+      "mean_dose_accelerated": 0.024793388321995735,
+      "trend_r": -0.052515553488983235,
+      "trend_p": 0.0029222786453756357,
+      "expected_direction_in_tails": true
+    },
+    {
+      "snp": "15:86765886_T",
+      "beta_fhs": -0.1557290059486509,
+      "mean_dose_resilient": 0.10326086729764938,
+      "mean_dose_middle": 0.05851493030786514,
+      "mean_dose_accelerated": 0.05509641766548157,
+      "trend_r": -0.04577552038960013,
+      "trend_p": 0.00950204247457174,
+      "expected_direction_in_tails": true
+    },
+    {
+      "snp": "12:74449855_G",
+      "beta_fhs": -0.2317267913831219,
+      "mean_dose_resilient": 0.0679347813129425,
+      "mean_dose_middle": 0.027441484853625298,
+      "mean_dose_accelerated": 0.00826446246355772,
+      "trend_r": -0.08200324395280105,
+      "trend_p": 3.2977222380653196e-06,
+      "expected_direction_in_tails": true
+    },
+    {
+      "snp": "10:26481651_C",
+      "beta_fhs": -0.1482662083346135,
+      "mean_dose_resilient": 0.1195652186870575,
+      "mean_dose_middle": 0.0762711837887764,
+      "mean_dose_accelerated": 0.03581267222762108,
+      "trend_r": -0.07448396931177138,
+      "trend_p": 2.404366339395941e-05,
+      "expected_direction_in_tails": true
+    }
+  ]
+}
